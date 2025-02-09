@@ -1,0 +1,36 @@
+.btn-rect {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: var(--color-gray-50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.swiper-button-disabled {
+    cursor: default;
+  }
+
+  &--black-light {
+    background-color: var(--color-black-light);
+  }
+
+  &--white {
+    background-color: var(--color-white);
+  }
+
+  &--white-01 {
+    background-color: rgba(var(--color-white--rgb), 0.1);
+  }
+
+  &__icon {
+    &--rotate-180 {
+      transform: rotate(180deg);
+    }
+  }
+
+  @media (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+  }
+}

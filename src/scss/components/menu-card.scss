@@ -1,0 +1,31 @@
+.menu-card {
+  position: relative;
+  padding: 24px;
+  background-color: var(--color-primary);
+  border-radius: 18px;
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    @include pseudo-icon("/img/dropdown-menu/lines.svg", 275px, 181px);
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    margin-left: 20px;
+    flex: 0 0 auto;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

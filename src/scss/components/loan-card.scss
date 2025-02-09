@@ -1,0 +1,26 @@
+.loan-card {
+  position: relative;
+  background-color: var(--color-gray-50);
+  overflow: hidden;
+
+  &__main {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__text {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  &__btn {
+    margin-top: 37px;
+  }
+
+  &__bg-img {
+    position: absolute;
+    right: -41px;
+    bottom: -14px;
+  }
+}

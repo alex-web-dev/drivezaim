@@ -1,0 +1,50 @@
+.step-item {
+  padding: 16px 16px 32px;
+  background-color: var(--color-black-light);
+
+  &__img-box {
+    margin-bottom: 24px;
+    position: relative;
+    padding-top: min(67.5%, 252px);
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    padding: 0 16px;
+  }
+
+  &__title-num {
+    margin-right: 18px;
+  }
+
+  &__text {
+    margin-top: 12px;
+
+    ul,
+    li {
+      &:not(:first-child) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__info {
+      padding: 0;
+    }
+
+    &__title-num {
+      margin-right: 12px;
+    }
+  }
+}

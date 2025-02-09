@@ -1,0 +1,25 @@
+.swiper-pagination {
+  display: flex;
+}
+
+.swiper-pagination-bullet {
+  flex: 1 1 auto;
+  height: 6px;
+  background-color: rgba(var(--color-white--rgb), 0.2);
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:not(:first-child) {
+    margin-left: 8px;
+  }
+
+  &-active {
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-pagination-bullet {
+    height: 4px;
+  }
+}

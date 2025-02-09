@@ -1,0 +1,15 @@
+.label {
+  padding: 4px 12px;
+  display: inline-flex;
+  border-radius: 4px;
+  background-color: rgba(var(--color-grey--rgb), 0.05);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--color-grey);
+
+  &--primary-005 {
+    background-color: rgba(var(--color-primary--rgb), 0.05);
+    color: var(--color-primary);
+  }
+}

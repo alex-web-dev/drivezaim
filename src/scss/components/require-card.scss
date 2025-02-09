@@ -1,0 +1,175 @@
+.require-card {
+  position: relative;
+  display: flex;
+  background-color: var(--color-gray-50);
+
+  &--primary {
+    background-color: var(--color-primary);
+  }
+
+  &__circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -185px;
+      bottom: -190px;
+      @include pseudo-icon("/img/icons/circle.svg", 550px, 550px);
+    }
+  }
+
+  &--h-lg {
+    min-height: 320px;
+  }
+
+  &--h-xl {
+    min-height: 420px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__main {
+    position: relative;
+    z-index: 2;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__info {
+    p,
+    li {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+
+    ul {
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  &__list {
+    &:not(:first-child) {
+      padding-right: 25px;
+    }
+  }
+
+  &__footer {
+    margin-top: auto;
+  }
+
+  &__btn {
+    margin-top: 24px;
+  }
+
+  &__bg-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    &--mb-xs {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+    margin-left: 24px;
+    align-self: center;
+    max-width: 309px;
+    flex: 0 0 auto;
+  }
+
+  &__lines {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media (max-width: 1180px) {
+    &__img {
+      margin-left: 16px;
+      max-width: 220px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__circle {
+      &:before {
+        left: unset;
+        right: -35px;
+        width: 400px;
+        height: 400px;
+      }
+    }
+
+    &__main {
+      &--with-img {
+        max-width: 60%;
+      }
+    }
+
+    &__bg-img {
+      max-width: 38%;
+
+      &--mb-xs {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__main {
+      &--with-img {
+        max-width: none;
+      }
+    }
+
+    &__bg-img {
+      display: none;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__lines {
+      display: none;
+    }
+
+    &__info {
+      p,
+      li {
+        &:not(:first-child) {
+          margin-top: 12px;
+        }
+      }
+    }
+
+    &__circle {
+      &:before {
+        right: unset;
+        left: -135px;
+        width: 320px;
+        height: 320px;
+        bottom: -155px;
+      }
+    }
+  }
+}

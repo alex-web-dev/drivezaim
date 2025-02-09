@@ -1,0 +1,12 @@
+.box {
+  padding: 32px;
+  border-radius: 24px;
+
+  @media (max-width: 1180px) {
+    padding: 28px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 24px 20px;
+  }
+}

@@ -1,0 +1,82 @@
+.title {
+  line-height: 1.5;
+  font-weight: 600;
+
+  b,
+  strong {
+    font-weight: 600;
+  }
+
+  &--strong-primary {
+    b,
+    strong {
+      color: var(--color-primary);
+    }
+  }
+
+  &--1 {
+    font-size: 32px;
+  }
+
+  &--2 {
+    font-size: 24px;
+  }
+
+  &--3 {
+    font-size: 20px;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--white {
+    color: #fff;
+  }
+
+  &--grey {
+    color: var(--color-grey);
+  }
+
+  &--primary {
+    color: var(--color-primary);
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--upper {
+    text-transform: uppercase;
+  }
+
+  &--lh-1 {
+    line-height: 1;
+  }
+
+  &--lh-14 {
+    line-height: 1.4;
+  }
+
+  &--iflex {
+    display: inline-flex;
+  }
+
+  @media (max-width: 767px) {
+    &--1 {
+      font-size: 28px;
+    }
+
+    &--2 {
+      font-size: 20px;
+    }
+
+    &--3 {
+      font-size: 18px;
+    }
+  }
+}

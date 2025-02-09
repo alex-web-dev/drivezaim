@@ -1,0 +1,15 @@
+.steps {
+  &__slide {
+    height: auto;
+  }
+
+  &__slide-item {
+    height: 100%;
+  }
+
+  &__footer {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+  }
+}

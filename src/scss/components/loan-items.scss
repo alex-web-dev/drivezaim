@@ -1,0 +1,11 @@
+.loan-items {
+  &__slide {
+    width: 716px;
+  }
+
+  @media (max-width: 991px) {
+    &__slider {
+      padding: 0 var(--container-offset);
+    }
+  }
+}

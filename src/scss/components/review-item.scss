@@ -1,0 +1,40 @@
+.review-item {
+  padding: 16px;
+  background-color: var(--color-black-light);
+
+  &__main {
+    padding: 16px 16px 0;
+
+    &:last-child {
+      padding-bottom: 16px;
+    }
+  }
+
+  &__author {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-top: 8px;
+  }
+
+  &__more {
+    margin-top: 12px;
+  }
+
+  &__video {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__main {
+      padding: 8px 4px 0;
+
+      &:last-child {
+        padding-bottom: 8px;
+      }
+    }
+  }
+}

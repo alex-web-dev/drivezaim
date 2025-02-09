@@ -1,0 +1,25 @@
+.about-slide {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    position: absolute;
+    left: 32px;
+    bottom: 64px;
+    z-index: 1;
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      left: 20px;
+      bottom: 40px;
+    }
+  }
+}

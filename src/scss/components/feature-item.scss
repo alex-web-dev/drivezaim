@@ -1,0 +1,27 @@
+.feature-item {
+  background-color: var(--color-gray-50);
+
+  &__icon-box {
+    margin-bottom: 24px;
+    width: 68px;
+    height: 68px;
+  }
+
+  &__icon {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  &__text {
+    margin-top: 12px;
+  }
+
+  @media (max-width: 767px) {
+    &__icon-box {
+      margin-bottom: 16px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.footer-card {
+  background-color: #fff;
+
+  &--p-xs {
+    padding: 16px;
+  }
+
+  &__location {
+    margin-bottom: 50px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__contact {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  &__address {
+    margin-top: 24px;
+  }
+
+  &__map-btn {
+    margin-top: 8px;
+  }
+
+  &__social-btns {
+    margin-top: 42px;
+    margin-left: -8px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__social-btn {
+    margin-top: 8px;
+    margin-left: 8px;
+  }
+
+  &__app {
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__app-info {
+    flex: 1 1 auto;
+  }
+
+  &__text {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  &__app-qr {
+    margin-left: 30px;
+    flex: 0 0 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__callback {
+    display: flex;
+  }
+
+  &__callback-info {
+    flex: 1 1 auto;
+  }
+
+  &__callback-btn {
+    margin-left: 24px;
+    flex: 0 0 auto;
+  }
+
+  @media (max-width: 991px) {
+    &__location {
+      margin-bottom: 32px;
+    }
+
+    &__social-btns {
+      margin-top: 24px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__location {
+      margin-bottom: 24px;
+    }
+
+    &__app {
+      padding-left: 4px;
+    }
+  }
+}

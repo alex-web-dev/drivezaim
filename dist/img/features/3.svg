@@ -1,0 +1,14 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_4002_1382" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="68" height="68">
+<rect width="68" height="68" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_4002_1382)">
+<circle cx="29.5" cy="33.5" r="3" stroke="#B71923" stroke-width="2"/>
+<circle cx="38.5" cy="42.5" r="3" stroke="#B71923" stroke-width="2"/>
+<path d="M42 30L26 46" stroke="#B71923" stroke-width="2"/>
+<path d="M10 23V15C10 13.8954 10.8954 13 12 13H56C57.1046 13 58 13.8954 58 15V23M10 23H58M10 23V30M58 23V57C58 58.1046 57.1046 59 56 59H12C10.8954 59 10 58.1046 10 57V38" stroke="#1D3A44" stroke-width="2"/>
+<path d="M26 13.5C26 11.0147 24.8807 9 23.5 9C22.1193 9 21 11.0147 21 13.5C21 15.9853 22.1193 18 23.5 18" stroke="#1D3A44" stroke-width="2"/>
+<path d="M47 13.5C47 11.0147 45.8807 9 44.5 9C43.1193 9 42 11.0147 42 13.5C42 15.9853 43.1193 18 44.5 18" stroke="#1D3A44" stroke-width="2"/>
+<path d="M10 54.5H50M50 54.5L57.6586 46.8414C57.7846 46.7154 57.6953 46.5 57.5172 46.5H51C50.4477 46.5 50 46.9477 50 47.5V54.5Z" stroke="#1D3A44" stroke-width="2"/>
+</g>
+</svg>

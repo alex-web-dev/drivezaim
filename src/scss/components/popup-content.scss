@@ -1,0 +1,19 @@
+.popup-content {
+  background-color: #fff;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__close {
+    margin-left: 20px;
+  }
+
+  &__form {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
+}

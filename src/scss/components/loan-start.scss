@@ -1,0 +1,44 @@
+.loan-start {
+  display: flex;
+
+  &__form {
+    margin: 9px 0 9px 12px;
+    flex: 0 0 auto;
+    width: calc(33% - 6px);
+  }
+
+  &__main {
+    flex: 1 1 auto;
+  }
+
+  &__items {
+    margin-left: -12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 12px;
+    margin-left: 12px;
+    width: calc(50% - 12px);
+
+    &:nth-child(2n + 1):last-child {
+      width: calc(100% - 12px);
+    }
+  }
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+
+    &__form {
+      margin: 12px 0 0;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__item {
+      width: calc(100% - 12px);
+    }
+  }
+}

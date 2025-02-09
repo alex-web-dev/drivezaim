@@ -1,0 +1,7 @@
+.list {
+  &__item {
+    &--white {
+      color: var(--color-white);
+    }
+  }
+}

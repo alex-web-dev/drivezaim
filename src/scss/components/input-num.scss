@@ -1,0 +1,52 @@
+.input-num {
+  &__main {
+    padding: 12px 16px 0;
+    border-radius: 12px;
+    background-color: var(--color-white);
+
+    &--gray-50 {
+      background-color: var(--color-gray-50);
+    }
+  }
+
+  &__label {
+    margin-bottom: 2px;
+
+    &--mb-0 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__value {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 160px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  &__slider {
+    margin-top: 18px;
+
+    &--mt-sm {
+      margin-top: 14px;
+    }
+  }
+
+  &__footer {
+    padding: 12px 16px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__to {
+    margin-left: 10px;
+  }
+
+  @media (max-width: 767px) {
+    &__value {
+      font-size: 18px;
+    }
+  }
+}

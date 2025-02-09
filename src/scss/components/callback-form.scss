@@ -1,0 +1,33 @@
+.callback-form {
+  &__calc-inputs {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(var(--color-grey--rgb), 0.5);
+  }
+
+  &__calc-input {
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  &__privacy {
+    margin-top: 24px;
+  }
+
+  &__btns {
+    margin-top: 40px;
+  }
+
+  &__btns-item {
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+}

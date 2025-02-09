@@ -1,0 +1,130 @@
+.loan-app {
+  position: relative;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+
+  &__main {
+    position: relative;
+    z-index: 1;
+    padding: 60px 0 60px 60px;
+    flex: 0 0 652px;
+  }
+
+  &__text {
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+  }
+
+  &__btns {
+    margin-top: 52px;
+    margin-left: -8px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__btns-item {
+    margin-top: 8px;
+    margin-left: 8px;
+    min-width: 172px;
+  }
+
+  &__img-box {
+    position: relative;
+    z-index: 1;
+    margin: 0 10px;
+    flex: 1 1 auto;
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__circles {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 422px;
+      height: 422px;
+      top: -200px;
+      right: 240px;
+      background: url("/img/icons/circle.svg") center / contain no-repeat;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 445px;
+      height: 445px;
+      bottom: -158px;
+      right: -126px;
+      background: url("/img/icons/circle.svg") center / contain no-repeat;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    &__main {
+      padding: 45px 0 45px 45px;
+      flex-basis: 580px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+
+    &__main {
+      padding-right: 45px;
+      flex: none;
+    }
+
+    &__img-box {
+      display: none;
+    }
+
+    &__circles {
+      &:before {
+        top: -124px;
+        right: -160px;
+        width: 272px;
+        height: 272px;
+      }
+
+      &:after {
+        bottom: -180px;
+        left: -134px;
+        width: 295px;
+        height: 295px;
+      }
+    }
+
+    &__btns {
+      margin-top: 32px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__main {
+      padding: 24px 20px;
+    }
+
+    &__btns {
+      margin-top: 24px;
+      flex-direction: column;
+    }
+
+    &__btns-item {
+      justify-content: center;
+    }
+  }
+}
