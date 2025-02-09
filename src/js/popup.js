@@ -1,4 +1,4 @@
-import { lockBody, unlockBody } from "./helpers";
+import { getBodyLockedBy, lockBody, unlockBody } from "./helpers";
 
 const $openBtns = document.querySelectorAll(".js-open-popup");
 $openBtns.forEach(($btn) => {
@@ -52,7 +52,9 @@ function closePopup($popup) {
   $popup.addEventListener(
     "transitionend",
     () => {
-      unlockBody();
+      if (getBodyLockedBy() === `popup-${$popup.dataset.popupName}`) {
+        unlockBody();
+      }
     },
     { once: true }
   );
@@ -64,5 +66,7 @@ function openPopup($popup) {
     return;
   }
 
-  lockBody(`popup-${$popup.dataset.popupName}`);
+  if (!getBodyLockedBy()) {
+    lockBody(`popup-${$popup.dataset.popupName}`);
+  }
 }

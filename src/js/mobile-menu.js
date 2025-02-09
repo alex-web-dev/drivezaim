@@ -1,3 +1,5 @@
+import { lockBody, unlockBody, getBodyLockedBy } from "./helpers";
+
 const $menu = document.querySelector(".mobile-menu");
 const delay = 600;
 
@@ -5,7 +7,11 @@ if ($menu) {
   const $menuToggleBtns = document.querySelectorAll(".js-toggle-menu");
   $menuToggleBtns.forEach(($menuToggle) => {
     $menuToggle.addEventListener("click", () => {
-      toggle($menu, $menuToggleBtns);
+      if (!$menu.classList.contains("mobile-menu--active")) {
+        open($menu, $menuToggleBtns);
+      } else {
+        close($menu, $menuToggleBtns);
+      }
 
       if ($menu.classList.contains("mobile-menu--show")) {
         $menu.classList.remove("mobile-menu--show");
@@ -21,14 +27,14 @@ if ($menu) {
   });
 }
 
-function toggle($menu, $menuToggleBtns) {
-  $menu?.classList.toggle("mobile-menu--active");
-  $menuToggleBtns.forEach(($menuToggle) => $menuToggle.classList.toggle("menu-toggle--active"));
-  document.body.classList.toggle("body--lock");
+function open($menu, $menuToggleBtns) {
+  $menu?.classList.add("mobile-menu--active");
+  $menuToggleBtns.forEach(($menuToggle) => $menuToggle.classList.add("menu-toggle--active"));
+  lockBody("mobile-menu");
 }
 
 function close($menu, $menuToggleBtns) {
   $menu?.classList.remove("mobile-menu--active");
   $menuToggleBtns.forEach(($menuToggle) => $menuToggle.classList.remove("menu-toggle--active"));
-  document.body.classList.remove("body--lock");
+  unlockBody();
 }

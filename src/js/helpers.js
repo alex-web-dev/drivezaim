@@ -23,6 +23,10 @@ export function unlockBody() {
   $absoluteElems.forEach(($elem) => ($elem.style.paddingRight = ""));
 }
 
+export function getBodyLockedBy() {
+  return document.body.dataset.lockedBy ? document.body.dataset.lockedBy : "";
+}
+
 export function extractNumber(str) {
   let match = str.match(/\d[\d\s]*\d|\d/);
   return match ? parseInt(match[0].replace(/\s+/g, ""), 10) : null;
