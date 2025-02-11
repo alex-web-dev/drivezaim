@@ -1,0 +1,172 @@
+.team-banner {
+  position: relative;
+  padding: 60px;
+  min-height: 340px;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    margin-bottom: 36px;
+  }
+
+  &__main {
+    position: relative;
+    z-index: 2;
+    flex: 0 0 355px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__info {
+    &--mt-auto {
+      margin-top: auto;
+    }
+  }
+
+  &__img-box {
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    z-index: 1;
+    max-width: 31%;
+  }
+
+  &__img {
+    display: block;
+  }
+
+  &__addition {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 0 0 272px;
+
+    &--pb-xl {
+      padding-bottom: 68px;
+    }
+  }
+
+  &__positions {
+    text-align: right;
+  }
+
+  &__position {
+    padding: 6px 12px;
+    display: inline-flex;
+    background-color: rgba(var(--color-white--rgb), 0.1);
+
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+  }
+
+  &__addition-footer {
+    margin-top: auto;
+  }
+
+  &__addition-btn {
+    margin-top: 24px;
+  }
+
+  &__circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 33%;
+      bottom: 0;
+      @include pseudo-icon("/img/team-director/circles.svg", 43.3%, 0);
+      padding-top: 26.5%;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    padding: 45px;
+  }
+
+  @media (max-width: 991px) {
+    padding: 28px;
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__main {
+      flex-basis: 280px;
+    }
+
+    &__addition {
+      &--pb-xl {
+        padding-bottom: 52px;
+      }
+    }
+
+    &__img-box {
+      max-width: 28%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 24px 20px 285px;
+    flex-direction: column;
+    min-height: auto;
+
+    &--slide {
+      padding-bottom: 265px;
+    }
+
+    &__main {
+      margin-bottom: 24px;
+      flex: none;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__circle {
+      display: none;
+    }
+
+    &__addition {
+      align-items: flex-start;
+      flex: none;
+
+      &--pb-xl {
+        padding-bottom: 0;
+      }
+    }
+
+    &__addition-text {
+      text-align: left;
+    }
+
+    &__positions {
+      text-align: left;
+    }
+
+    &__img-box {
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 220px;
+      width: 220px;
+
+      &--mobile-left {
+        left: 20px;
+        transform: translateX(0);
+        max-width: 200px;
+        width: 200px;
+      }
+    }
+  }
+}

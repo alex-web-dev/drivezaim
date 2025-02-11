@@ -1,7 +1,7 @@
 .text {
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--color-black);
 
   &--xs {
@@ -80,8 +80,8 @@
     font-weight: 300;
   }
 
-  &--medium {
-    font-weight: 500;
+  &--regular {
+    font-weight: 400;
   }
 
   &--semibold {
@@ -162,6 +162,11 @@
     line-clamp: 2;
   }
 
+  &--clamp-lines-3 {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+
   &--clamp-word {
     word-break: break-word;
   }
@@ -208,7 +213,15 @@
 
   p {
     &:not(:first-child) {
-      margin-top: 20px;
+      margin-top: 12px;
+    }
+  }
+
+  &--my-xl {
+    p {
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
     }
   }
 
@@ -268,18 +281,12 @@
     }
   }
 
-  @media (max-width: 991px) {
-    p {
-      &:not(:first-child) {
-        margin-top: 18px;
-      }
-    }
-  }
-
   @media (max-width: 767px) {
-    p {
-      &:not(:first-child) {
-        margin-top: 16px;
+    &--my-xl {
+      p {
+        &:not(:first-child) {
+          margin-top: 16px;
+        }
       }
     }
 

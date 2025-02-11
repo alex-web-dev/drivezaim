@@ -1,0 +1,51 @@
+.team-banners {
+  position: relative;
+
+  &__slider {
+    margin-top: -140px;
+    padding-top: 140px;
+  }
+
+  &__slider-btns {
+    position: absolute;
+    z-index: 1;
+    right: 60px;
+    bottom: 60px;
+    display: flex;
+  }
+
+  &__slider-btn {
+    transition: background 0.35s;
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+
+    .btn-rect__icon {
+      stroke: var(--color-primary);
+      transition: stroke 0.35s;
+    }
+
+    &.swiper-button-disabled {
+      background-color: rgba(var(--color-white--rgb), 0.1);
+
+      .btn-rect__icon {
+        stroke: var(--color-white);
+      }
+    }
+  }
+
+  @media (max-width: 1180px) {
+    &__slider-btns {
+        right: 45px;
+        bottom: 45px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__slider-btns {
+        right: 28px;
+        bottom: 28px;
+    }
+  }
+}

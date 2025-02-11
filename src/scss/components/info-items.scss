@@ -1,0 +1,30 @@
+.info-items {
+  &__list {
+    margin-top: -12px;
+    margin-left: -12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-left: 12px;
+    margin-top: 12px;
+    width: calc(100% - 12px);
+
+    &--col-6 {
+      width: calc(50% - 12px);
+    }
+  }
+
+  &__text {
+    margin-top: 12px;
+  }
+
+  @media (max-width: 767px) {
+    &__item {
+      &--col-6 {
+        width: calc(100% - 12px);
+      }
+    }
+  }
+}

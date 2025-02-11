@@ -14,3 +14,6 @@ import "./popup.js";
 import "./menu.js";
 import "./mobile-menu.js";
 import "./smooth-scroll.js";
+import "./team-banners.js";
+import "./tabs.js";
+import './simplebar.js';

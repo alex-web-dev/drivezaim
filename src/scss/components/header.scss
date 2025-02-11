@@ -6,11 +6,10 @@
   z-index: 8;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  transition: box-shadow 0.35s;
+  transition: box-shadow 0.35s, transform 0.35s;
 
   &__content {
     background-color: #fff;
-    transition: transform 0.35s;
 
     &:before {
       content: "";

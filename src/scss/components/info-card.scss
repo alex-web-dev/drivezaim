@@ -1,6 +1,7 @@
 .info-card {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   background-color: var(--color-black-light);
 
   &--gray-50 {
@@ -11,9 +12,21 @@
     background-color: var(--color-white);
   }
 
+  &__title {
+    &--w-xs {
+      max-width: 400px;
+    }
+  }
+
   &__text {
     &:not(:first-child) {
       margin-top: 12px;
+    }
+
+    &--mt-xs {
+      &:not(:first-child) {
+        margin-top: 4px;
+      }
     }
 
     &--mt-lg {
@@ -29,12 +42,20 @@
     }
   }
 
+  &__location {
+    margin-bottom: 12px;
+  }
+
   &__footer {
     margin-top: auto;
   }
 
   &__btn {
     margin-top: 20px;
+  }
+
+  &__bottom-location {
+    margin-top: 16px;
   }
 
   @media (max-width: 767px) {

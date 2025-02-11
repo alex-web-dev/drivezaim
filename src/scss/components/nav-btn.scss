@@ -1,0 +1,13 @@
+.nav-btn {
+  padding: 16px;
+  background-color: var(--color-gray-50);
+  border-radius: 8px;
+  font-weight: 500;
+
+  &--active,
+  &.tabs-btns__btn--active {
+    background-color: var(--color-primary);
+    font-weight: 600;
+    color: var(--color-white);
+  }
+}

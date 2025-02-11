@@ -23,6 +23,15 @@
     background-color: rgba(var(--color-white--rgb), 0.1);
   }
 
+  &--gray-100 {
+    background-color: var(--color-gray-100);
+  }
+
+  &--xs {
+    width: 40px;
+    height: 40px;
+  }
+
   &__icon {
     &--rotate-180 {
       transform: rotate(180deg);

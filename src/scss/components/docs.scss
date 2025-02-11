@@ -1,0 +1,27 @@
+.docs {
+  &__list {
+    margin-top: -12px;
+    margin-left: -12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 12px;
+    margin-left: 12px;
+    width: calc(33.33% - 12px);
+    min-height: 209px;
+  }
+
+  @media (max-width: 991px) {
+    &__item {
+      width: calc(50% - 12px);
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__item {
+      width: calc(100% - 12px);
+    }
+  }
+}

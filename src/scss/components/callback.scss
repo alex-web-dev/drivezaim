@@ -1,32 +1,29 @@
 .callback {
   position: relative;
-  padding: 0;
-  background-color: var(--color-primary);
-  display: flex;
+
+  &__content {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-black);
+  }
 
   &__main {
     position: relative;
     z-index: 1;
-    padding: 32px 0 32px 60px;
-    flex: 0 0 600px;
+    padding: 32px 0 32px 32px;
+    flex: 0 0 582px;
 
     &:last-child {
-      padding-right: 60px;
+      padding-right: 32px;
     }
-  }
-
-  &__btn {
-    margin-top: 24px;
-  }
-
-  &__privacy {
-    margin-top: 24px;
   }
 
   &__img-box {
     position: relative;
     z-index: 1;
     flex: 1 1 auto;
+    max-width: 41.4%;
     margin: 0 20px;
   }
 
@@ -48,9 +45,10 @@
 
     &:before {
       position: absolute;
-      top: 10px;
+      top: 40px;
       right: -66px;
-      @include pseudo-icon("/img/icons/circle.svg", 569px, 569px);
+      padding-top: 51.4%;
+      @include pseudo-icon("/img/callback/circle.svg", 51.4%, 0);
     }
   }
 
@@ -72,13 +70,16 @@
     }
 
     &__img-box {
-      flex: 0 0 46%;
+      margin-left: 12px;
+      margin-right: 0;
+      flex: 0 0 38%;
     }
 
     &__circle {
       &:before {
         top: 140px;
         right: -66px;
+        padding-top: 0;
         width: 400px;
         height: 400px;
       }
