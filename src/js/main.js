@@ -17,3 +17,5 @@ import "./smooth-scroll.js";
 import "./team-banners.js";
 import "./tabs.js";
 import './simplebar.js';
+import './article.js';
+import './progress-circle.js';

@@ -1,6 +1,7 @@
 .label {
   padding: 4px 12px;
   display: inline-flex;
+  align-items: center;
   border-radius: 4px;
   background-color: rgba(var(--color-grey--rgb), 0.05);
   font-size: 14px;
@@ -11,5 +12,21 @@
   &--primary-005 {
     background-color: rgba(var(--color-primary--rgb), 0.05);
     color: var(--color-primary);
+  }
+
+  &--white {
+    background-color: var(--color-white);
+  }
+
+  &--gray-100 {
+    background-color: var(--color-gray-100);
+  }
+
+  &--shadow {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &__icon {
+    margin-right: 4px;
   }
 }

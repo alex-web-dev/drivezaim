@@ -10,10 +10,11 @@ $hasChildrenItems.forEach(($item) => {
 window.addEventListener("click", (e) => {
   const $activeItem = document.querySelector(".menu__item--active");
   const isInner = e.target.closest(".menu__item") && !e.target.classList.contains("menu__item");
+  const isOpenPopupBtn = e.target.closest(".js-open-popup");
 
-  if (!$activeItem || isInner) {
+  if (!isOpenPopupBtn && (!$activeItem || isInner)) {
     return;
   }
 
-  $activeItem.classList.remove("menu__item--active");
+  $activeItem?.classList.remove("menu__item--active");
 });

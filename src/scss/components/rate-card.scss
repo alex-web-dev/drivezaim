@@ -1,0 +1,40 @@
+.rate-card {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-gray-100);
+  border-radius: 16px;
+
+  &__info {
+    flex: 1 1 auto;
+  }
+
+  &__text {
+    margin-top: 8px;
+  }
+
+  &__progress {
+    margin-left: 24px;
+    flex: 0 0 auto;
+  }
+
+  @media (max-width: 1180px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 16px;
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+
+    &__progress {
+      margin-left: 16px;
+    }
+  }
+}

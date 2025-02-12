@@ -1,0 +1,42 @@
+.blog {
+  &__list {
+    margin-top: -12px;
+    margin-left: -12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-top: 12px;
+    margin-left: 12px;
+    width: calc(33.33% - 12px);
+
+    &--col-12 {
+      width: calc(100% - 12px);
+    }
+  }
+
+  &__pagination {
+    margin-top: 24px;
+  }
+
+  @media (max-width: 1180px) {
+    &__item {
+      width: calc(50% - 12px);
+
+      &--col-12 {
+        width: calc(100% - 12px);
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__item {
+      width: calc(100% - 12px);
+
+      &--col-12 {
+        width: calc(100% - 12px);
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.rate {
+  padding: 24px 32px 32px;
+  border-radius: 16px;
+  border: 2px solid var(--color-primary);
+  text-align: center;
+
+  &__text {
+    margin-top: 4px;
+  }
+
+  &__inputs {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__input {
+    &:not(:first-child) {
+      margin-left: 16px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 24px 20px;
+
+    &__input {
+      &:not(:first-child) {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  @media (max-width: 370px) {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__input {
+      &:not(:first-child) {
+        margin-left: 6px;
+      }
+    }
+  }
+}

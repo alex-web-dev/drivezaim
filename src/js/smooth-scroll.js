@@ -12,7 +12,9 @@ $anchors.forEach($anchor => {
 
     const $elem = document.querySelector(id);
     if ($elem) {
-      const offsetTop = $elem.getBoundingClientRect().top;
+      const headerBottomHeight = document.querySelector('.header__bottom').offsetHeight;
+      const additionOffset = 12;
+      const offsetTop = $elem.getBoundingClientRect().top - headerBottomHeight - additionOffset;
       window.scrollBy({ top: (offsetTop), left: 0, behavior: 'smooth' });
     }
   });

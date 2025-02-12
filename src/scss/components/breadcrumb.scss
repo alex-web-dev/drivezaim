@@ -20,7 +20,7 @@
       &:after {
         margin-top: 1px;
         margin-left: 12px;
-        @include pseudo-icon('/img/icons/next-grey-2.svg', 18px, 18px);
+        @include pseudo-icon("/img/icons/next-grey-2.svg", 18px, 18px);
         background-size: 8px 12px;
       }
     }
@@ -29,7 +29,6 @@
   &__link,
   &__current {
     flex: 0 0 auto;
-    max-width: 160px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;

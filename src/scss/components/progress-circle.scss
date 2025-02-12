@@ -1,0 +1,46 @@
+.progress-circle {
+  position: relative;
+  display: inline-flex;
+  width: 78px;
+  height: 78px;
+
+  &__svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transform: rotate(-90deg);
+  }
+
+  &__line {
+    fill: none;
+    stroke-width: 3.5px;
+    stroke-linecap: round;
+    stroke: rgba(var(--color-grey--rgb), 0.2);
+
+    &--filled {
+      stroke: var(--color-black);
+      stroke-dasharray: 282;
+    }
+  }
+
+  &__value {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  @media (max-width: 767px) {
+    width: 64px;
+    height: 64px;
+
+    &__value {
+      font-size: 14px;
+    }
+  }
+}

@@ -9,5 +9,11 @@
     background-color: var(--color-primary);
     font-weight: 600;
     color: var(--color-white);
+    cursor: default;
+  }
+
+  @media (max-width: 767px) {
+    padding: 12px;
+    font-size: 14px;
   }
 }

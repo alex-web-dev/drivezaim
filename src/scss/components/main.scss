@@ -10,6 +10,10 @@
   &__section {
     margin-top: 80px;
 
+    &--mt-sm {
+      margin-top: 60px;
+    }
+
     &--mt-xs {
       margin-top: 40px;
     }
@@ -36,6 +40,10 @@
 
     &__section {
       margin-top: 60px;
+
+      &--mt-sm {
+        margin-top: 50px;
+      }
 
       &--mt-xs {
         margin-top: 40px;

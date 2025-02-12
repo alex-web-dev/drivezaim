@@ -1,0 +1,48 @@
+.rate-input {
+  text-align: center;
+  cursor: pointer;
+
+  &__icon-box {
+    padding: 9px;
+  }
+
+  &__icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    stroke: var(--color-primary);
+  }
+
+  &__icon-eye {
+    fill: var(--color-primary);
+    stroke: transparent;
+  }
+
+  &__field {
+    display: none;
+  }
+
+  &__field:checked ~ &__icon-box &__icon {
+    stroke: var(--color-white);
+    fill: var(--color-primary);
+  }
+
+  &__field:checked ~ &__icon-box &__icon-eye {
+    fill: var(--color-white);
+  }
+
+  &__field:checked ~ &__text {
+    color: var(--color-primary);
+  }
+
+  @media (max-width: 767px) {
+    &__icon-box {
+      padding: 6px;
+    }
+
+    &__icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
