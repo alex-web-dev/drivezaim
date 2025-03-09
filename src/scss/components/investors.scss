@@ -1,0 +1,11 @@
+.investors {
+  &__slide {
+    width: 1122px;
+  }
+
+  @media (max-width: 1180px) {
+    &__slider {
+      padding: 0 var(--container-offset);
+    }
+  }
+}

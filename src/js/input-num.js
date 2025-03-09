@@ -4,6 +4,10 @@ import { extractNumber } from "./helpers";
 const $priceFilters = document.querySelectorAll(".input-num");
 $priceFilters.forEach(($filter) => {
   const $slider = $filter.querySelector(".input-num__slider");
+  if (!$slider) {
+    return;
+  }
+  
   const data = {
     min: +$slider.dataset.min || 1,
     max: +$slider.dataset.max || 100,

@@ -1,11 +1,27 @@
 .input-num {
   &__main {
+    position: relative;
     padding: 12px 16px 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
     border-radius: 12px;
     background-color: var(--color-white);
 
     &--gray-50 {
       background-color: var(--color-gray-50);
+    }
+
+    &--arrow {
+      &:before {
+        position: absolute;
+        right: 16px;
+        bottom: 20px;
+        @include pseudo-icon("/img/icons/next-grey.svg", 24px, 24px);
+        background-size: 12px 12px;
+        transform: rotate(90deg);
+        pointer-events: none;
+      }
     }
   }
 
@@ -18,12 +34,16 @@
   }
 
   &__value {
+    margin-bottom: auto;
+    padding: 0;
     background-color: transparent;
     border: none;
     outline: none;
-    width: 160px;
+    width: 100%;
     font-size: 20px;
     font-weight: 600;
+    appearance: none;
+    -webkit-appearance: none;
   }
 
   &__slider {
@@ -45,6 +65,10 @@
   }
 
   @media (max-width: 767px) {
+    &__main {
+      min-height: 77px;
+    }
+    
     &__value {
       font-size: 18px;
     }

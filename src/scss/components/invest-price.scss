@@ -1,0 +1,9 @@
+.invest-price {
+  background-color: rgba(var(--color-white--rgb), 0.2);
+  
+  &__text {
+    &:not(:first-child) {
+      margin-top: 4px;
+    }
+  }
+}

@@ -225,6 +225,18 @@
     }
   }
 
+  &--b-black {
+    b {
+      color: var(--color-black);
+    }
+  }
+
+  &--b-medium {
+    b {
+      font-weight: 500;
+    }
+  }
+
   a {
     transition: color 0.35s;
   }

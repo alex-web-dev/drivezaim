@@ -1,0 +1,51 @@
+.investor-become {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 327px;
+  background-color: var(--color-black);
+
+  &:before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include pseudo-icon("/img/invest/become-bg.svg", 300px, 296px);
+  }
+
+  &__info {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+
+  &__footer {
+    margin-top: auto;
+  }
+
+  &__btn {
+    margin-top: 24px;
+  }
+
+  &__bg-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media (max-width: 767px) {
+    &__btn {
+      margin-top: 80px;
+    }
+
+    &__bg-img {
+      max-height: 140px;
+      bottom: 30px;
+    }
+  }
+}

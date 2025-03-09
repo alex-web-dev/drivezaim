@@ -17,6 +17,8 @@ export default {
         blog: 'blog.html',
         article: 'article.html',
         author: 'author.html',
+        investment: 'investment.html',
+        investmentRatingWithButton: 'investment-rating-with-button.html',
       },
     },
   },

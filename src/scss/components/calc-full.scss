@@ -16,6 +16,12 @@
     }
   }
 
+  &__tabs {
+    &:not(:first-child) {
+      margin-top: 36px;
+    }
+  }
+
   &__inputs {
     margin-top: -24px;
     margin-left: -24px;
@@ -28,6 +34,10 @@
     margin-top: 24px;
     margin-left: 24px;
     width: calc(50% - 24px);
+
+    &--grow {
+      flex: 1 1 0%;
+    }
   }
 
   &__result {
@@ -60,13 +70,77 @@
     }
   }
 
+  &__tabs-btns {
+    display: flex;
+    overflow-x: auto;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__tabs-btn {
+    flex: 0 0 auto;
+    opacity: 0.5;
+    transition: opacity 0.35s;
+
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+
+    &.tabs-btns__btn--active {
+      opacity: 1;
+      cursor: default;
+    }
+  }
+
+  &__footer {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__details {
+    flex: 0 0 auto;
+    margin-top: -12px;
+    margin-left: -80px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__detail {
+    margin-top: 12px;
+    margin-left: 80px;
+  }
+
+  &__footer-btn {
+    margin-left: 20px;
+    flex: 0 1 376px;
+  }
+
   @media (max-width: 1180px) {
     &__btns {
       flex-basis: 330px;
     }
+
+    &__details {
+      margin-left: -40px;
+    }
+
+    &__detail {
+      margin-left: 40px;
+    }
   }
 
   @media (max-width: 991px) {
+    &__header {
+      &--md-column {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
     &__main {
       flex-direction: column;
       align-items: flex-start;
@@ -74,6 +148,13 @@
 
     &__inputs {
       width: calc(100% + 24px);
+    }
+
+    &__inputs-item {
+      &--grow {
+        flex: none;
+        width: calc(100% - 24px);
+      }
     }
 
     &__btns {
@@ -88,6 +169,36 @@
         width: 100%;
         height: 1px;
       }
+    }
+
+    &__tabs-btns {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+
+    &__tabs-btn {
+      &:not(:first-child) {
+        margin-left: 0;
+        margin-top: 4px;
+      }
+    }
+
+    &__footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__footer-btn {
+      margin-top: 20px;
+      margin-left: 0;
+      flex: none;
+      width: 384px;
+      max-width: 100%;
     }
   }
 
@@ -105,6 +216,19 @@
 
     &__inputs-item {
       width: calc(100% - 24px);
+    }
+
+    &__details {
+      flex-wrap: wrap;
+      align-self: stretch;
+    }
+
+    &__detail {
+      width: calc(100% - 40px);
+    }
+
+    &__footer-btn {
+      width: 100%;
     }
   }
 }

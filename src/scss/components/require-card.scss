@@ -7,6 +7,18 @@
     background-color: var(--color-primary);
   }
 
+  &--p-0 {
+    padding: 0;
+  }
+
+  &--h-lg {
+    min-height: 320px;
+  }
+
+  &--h-xl {
+    min-height: 420px;
+  }
+
   &__circle {
     position: absolute;
     left: 0;
@@ -22,18 +34,20 @@
       bottom: -190px;
       @include pseudo-icon("/img/icons/circle.svg", 550px, 550px);
     }
-  }
 
-  &--h-lg {
-    min-height: 320px;
-  }
-
-  &--h-xl {
-    min-height: 420px;
+    &--thin {
+      &:before {
+        background-image: url("/img/icons/circle-thin.svg");
+      }
+    }
   }
 
   &__title {
     margin-bottom: 24px;
+
+    &--mb-xs {
+      margin-bottom: 8px;
+    }
   }
 
   &__main {
@@ -43,6 +57,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 100%;
+  }
+
+  &__body {
+    padding: 32px;
+
+    &--sm {
+      max-width: 294px;
+    }
   }
 
   &__info {
@@ -68,6 +91,7 @@
 
   &__footer {
     margin-top: auto;
+    max-width: 100%;
   }
 
   &__btn {
@@ -82,6 +106,10 @@
 
     &--mb-xs {
       margin-bottom: 10px;
+    }
+
+    &--mb-xl {
+      margin-bottom: 43px;
     }
   }
 
@@ -98,10 +126,66 @@
     right: 0;
   }
 
+  &__companies {
+    padding-bottom: 32px;
+    user-select: none;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  &__companies-wrapper {
+    display: flex;
+    gap: 20px;
+    will-change: transform;
+    animation: scroll 12s linear infinite;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
+
+  &__companies-slide {
+    flex-shrink: 0;
+  }
+
+  &__company {
+    width: 300px;
+    height: 140px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(var(--color-white--rgb), 0.1);
+    border-radius: 12px;
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 170px;
+  }
+
   @media (max-width: 1180px) {
+    &__body {
+      padding: 28px;
+    }
+
     &__img {
       margin-left: 16px;
       max-width: 220px;
+    }
+
+    &__companies {
+      padding-bottom: 28px;
     }
   }
 
@@ -141,6 +225,10 @@
       }
     }
 
+    &__body {
+      padding: 24px 20px;
+    }
+
     &__bg-img {
       display: none;
     }
@@ -170,6 +258,10 @@
         height: 320px;
         bottom: -155px;
       }
+    }
+
+    &__companies {
+      padding-bottom: 24px;
     }
   }
 }

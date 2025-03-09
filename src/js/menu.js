@@ -1,11 +1,20 @@
+const $backdrop = document.querySelector(".backdrop");
 const $hasChildrenItems = document.querySelectorAll(".menu__item--has-children");
 $hasChildrenItems.forEach(($item) => {
   const $link = $item.querySelector(".menu__link");
 
   $link.addEventListener("click", () => {
-    $item.classList.toggle("menu__item--active");
+    if ($item.classList.contains("menu__item--active")) {
+      $backdrop?.classList.remove("backdrop--active");
+      $item.classList.remove("menu__item--active");
+    } else {
+      $backdrop?.classList.add("backdrop--active");
+      $item.classList.add("menu__item--active");
+    }
   });
 });
+
+window.addEventListener("load", () => $backdrop?.classList.add("backdrop--show"));
 
 window.addEventListener("click", (e) => {
   const $activeItem = document.querySelector(".menu__item--active");
@@ -16,5 +25,6 @@ window.addEventListener("click", (e) => {
     return;
   }
 
+  $backdrop?.classList.remove("backdrop--active");
   $activeItem?.classList.remove("menu__item--active");
 });

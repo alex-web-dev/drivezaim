@@ -6,6 +6,11 @@
   &__content {
     position: relative;
     padding-top: 67.5%;
+
+    &--h-full {
+      padding-top: 0;
+      height: 100%;
+    }
   }
 
   &__main {

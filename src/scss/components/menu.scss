@@ -35,10 +35,10 @@
 
   &__dropdown {
     position: absolute;
-    right: 0;
+    left: 190px;
     top: 100%;
     margin-top: 5px;
-    width: 960px;
+    width: 680px;
     display: none;
   }
 
@@ -46,7 +46,7 @@
     display: flex;
   }
 
-  @media (max-width: 1180px) {
+  @media (max-width: 1280px) {
     &__list {
       margin-left: -24px;
     }
@@ -56,7 +56,7 @@
     }
   }
 
-  @media (max-width: 1080px) {
+  @media (max-width: 1180px) {
     position: relative;
 
     &__list {
