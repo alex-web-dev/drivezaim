@@ -20,4 +20,3 @@ import './simplebar.js';
 import './article.js';
 import './progress-circle.js';
 import './investors.js';
-import './require-card.js';
