@@ -19,6 +19,7 @@ export default {
         author: 'author.html',
         investment: 'investment.html',
         investmentRatingWithButton: 'investment-rating-with-button.html',
+        partners: 'partners.html',
       },
     },
   },
