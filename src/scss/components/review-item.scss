@@ -2,6 +2,10 @@
   padding: 16px;
   background-color: var(--color-black-light);
 
+  &--gray-50 {
+    background-color: var(--color-gray-50);
+  }
+
   &__main {
     padding: 16px 16px 0;
 

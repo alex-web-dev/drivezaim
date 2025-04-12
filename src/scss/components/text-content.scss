@@ -97,9 +97,20 @@
     }
   }
 
+  &--my-xl {
+    p,
+    ul,
+    li {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+  }
+
   &--my-2xl {
     p,
-    ul {
+    ul,
+    li {
       &:not(:first-child) {
         margin-top: 24px;
       }

@@ -1,4 +1,4 @@
-import { lockBody, unlockBody, getBodyLockedBy } from "./helpers";
+import { lockBody, unlockBody } from "./helpers";
 
 const $menu = document.querySelector(".mobile-menu");
 const delay = 600;

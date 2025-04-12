@@ -8,6 +8,10 @@
 
   &__title {
     margin-bottom: 36px;
+
+    &--mb-xs {
+      margin-bottom: 24px;
+    }
   }
 
   &__main {
@@ -17,6 +21,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    &--lg {
+      flex-basis: 400px;
+    }
   }
 
   &__info {
@@ -31,6 +39,11 @@
     bottom: 0;
     z-index: 1;
     max-width: 31%;
+
+    &--lg {
+      left: 36%;
+      max-width: 35%;
+    }
   }
 
   &__img {
@@ -88,6 +101,14 @@
       @include pseudo-icon("/img/team-director/circles.svg", 43.3%, 0);
       padding-top: 26.5%;
     }
+
+    &--lg {
+      &:before {
+        left: 30%;
+        width: 49%;
+        padding-top: 41%;
+      }
+    }
   }
 
   @media (max-width: 1180px) {
@@ -113,6 +134,10 @@
 
     &__img-box {
       max-width: 28%;
+
+      &--lg {
+        max-width: 33%;
+      }
     }
   }
 

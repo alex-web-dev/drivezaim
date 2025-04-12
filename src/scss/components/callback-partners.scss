@@ -1,0 +1,145 @@
+.callback-partners {
+  &__content {
+    background-color: var(--color-black);
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__tabs-btns {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  &__tabs-btn {
+    flex: 0 0 auto;
+    opacity: 0.5;
+    transition: opacity 0.35s;
+
+    &:not(:first-child) {
+      margin-left: 24px;
+    }
+
+    &.tabs-btns__btn--active {
+      opacity: 1;
+      cursor: default;
+    }
+  }
+
+  &__tabs {
+    margin-top: 24px;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inputs {
+    position: relative;
+    flex: 1 1 auto;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+      padding-right: 24px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 52px;
+        background-color: rgba(var(--color-white--rgb), 0.2);
+      }
+    }
+  }
+
+  &__inputs-list {
+    margin-top: -8px;
+    margin-left: -8px;
+    display: flex;
+  }
+
+  &__input {
+    margin-top: 8px;
+    margin-left: 8px;
+    flex: 1 1 0%;
+  }
+
+  &__btn {
+    flex: 0 0 auto;
+    width: 280px;
+  }
+
+  &__privacy {
+    margin-top: 24px;
+  }
+
+  &__ps {
+    margin-top: 12px;
+  }
+
+  @media (max-width: 991px) {
+    &__main {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__inputs {
+      width: 100%;
+
+      &:not(:last-child) {
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 8px;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &__inputs-list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__input {
+      width: calc(100% - 8px);
+    }
+
+    &__btn {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__tabs-btns {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__tabs-btn {
+      padding: 4px 0;
+      font-size: 16px;
+
+      &:not(:first-child) {
+        margin-left: 0;
+      }
+    }
+
+    &__btn {
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+}

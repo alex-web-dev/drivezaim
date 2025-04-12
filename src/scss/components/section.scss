@@ -90,6 +90,27 @@
     margin-top: 36px;
   }
 
+  &__callback-partners {
+    margin-top: 12px;
+  }
+
+  &__cards-list {
+    margin-top: -12px;
+    margin-left: -12px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__cards-item {
+    margin-top: 12px;
+    margin-left: 12px;
+    width: calc(50% - 12px);
+
+    &--col-12 {
+      width: calc(100% - 12px);
+    }
+  }
+
   @media (max-width: 991px) {
     &--black {
       padding-top: 60px;
@@ -150,6 +171,10 @@
         margin-left: 20px;
         padding-left: 20px;
       }
+    }
+
+    &__cards-item {
+      width: calc(100% - 12px);
     }
   }
 }
