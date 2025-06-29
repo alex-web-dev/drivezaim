@@ -8,9 +8,18 @@
   &__img {
     max-height: 100%;
     object-fit: contain;
+    transition: fill 0.35s, stroke 0.35s;
 
     &--rotate-180deg {
       transform: rotate(180deg);
+    }
+
+    &--stroke-black {
+      stroke: var(--color-black);
+    }
+
+    &--stroke-white {
+      stroke: var(--color-white);
     }
   }
 

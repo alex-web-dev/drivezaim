@@ -6,6 +6,10 @@
   display: flex;
   justify-content: space-between;
 
+  &--gray-50 {
+    background-color: var(--color-gray-50);
+  }
+
   &__title {
     margin-bottom: 36px;
 
@@ -25,6 +29,10 @@
     &--lg {
       flex-basis: 400px;
     }
+
+    &--sm {
+      flex-basis: 332px;
+    }
   }
 
   &__info {
@@ -42,6 +50,16 @@
 
     &--lg {
       left: 36%;
+      max-width: 35%;
+    }
+
+    &--xl {
+      left: 35.8%;
+      max-width: 40%;
+    }
+
+    &--consultation {
+      left: 38.5%;
       max-width: 35%;
     }
   }
@@ -109,6 +127,29 @@
         padding-top: 41%;
       }
     }
+
+    &--xl {
+      &:before {
+        left: 27%;
+        width: 55%;
+        padding-top: 38%;
+      }
+    }
+
+    &--full {
+      &:before {
+        background-image: url("/img/money-in-action/loan-terms-circles.svg");
+      }
+    }
+
+    &--consultation {
+      &:before {
+        left: 33%;
+        width: 44%;
+        padding-top: 29%;
+        background-image: url("/img/credit-for-contract/consultation-circles.svg");
+      }
+    }
   }
 
   @media (max-width: 1180px) {
@@ -137,6 +178,10 @@
 
       &--lg {
         max-width: 33%;
+      }
+
+      &--xl {
+        max-width: 34%;
       }
     }
   }
@@ -191,6 +236,16 @@
         transform: translateX(0);
         max-width: 200px;
         width: 200px;
+      }
+
+      &--xl {
+        max-width: 260px;
+        width: 260px;
+      }
+
+      &--consultation {
+        max-width: 210px;
+        width: 210px;
       }
     }
   }

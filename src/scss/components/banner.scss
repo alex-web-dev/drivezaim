@@ -1,0 +1,99 @@
+.banner {
+  position: relative;
+  padding: 40px 0;
+  background-color: #1d3a44;
+  border-radius: 0px 0px 24px 24px;
+  min-height: 605px;
+  overflow: hidden;
+
+  &__breadcrumb {
+    margin-bottom: 24px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__info {
+    margin-top: 60px;
+    max-width: 460px;
+  }
+
+  &__text {
+    margin-top: 24px;
+  }
+
+  &__btn {
+    margin-top: 36px;
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background: radial-gradient(61.18% 274.36% at 86.01% 50%, rgba(29, 58, 68, 0) 23.97%, #1d3a44 100%);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 991px) {
+    &__info {
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    min-height: auto;
+
+    &__info {
+      margin-top: 24px;
+    }
+
+    &__text {
+      margin-top: 16px;
+    }
+
+    &__btn {
+      margin-top: 24px;
+    }
+
+    &__bg {
+      &:before {
+        background: radial-gradient(50.18% 274.36% at 100.01% 50%, rgba(29, 58, 68, 0) 8.97%, #1d3a44 100%);
+      }
+    }
+
+    &__img {
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__info {
+      max-width: 320px;
+    }
+  }
+}

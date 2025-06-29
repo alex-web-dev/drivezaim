@@ -5,6 +5,7 @@
 
   p,
   ul,
+  ol,
   li {
     &:not(:first-child) {
       margin-top: 8px;
@@ -28,6 +29,27 @@
         height: 3px;
         border-radius: 50%;
         background-color: var(--color-black);
+      }
+    }
+  }
+
+  ol {
+    padding-left: 5px;
+    counter-reset: count;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      line-height: 1.7;
+
+      &:not(:first-child) {
+        margin-top: 3px;
+      }
+
+      &:before {
+        min-width: 17px;
+        content: counter(count) ". ";
+        counter-increment: count;
       }
     }
   }
@@ -90,7 +112,9 @@
 
   &--my-lg {
     p,
-    ul {
+    ul,
+    ol,
+    li {
       &:not(:first-child) {
         margin-top: 12px;
       }
@@ -100,6 +124,7 @@
   &--my-xl {
     p,
     ul,
+    ol,
     li {
       &:not(:first-child) {
         margin-top: 16px;
@@ -110,6 +135,7 @@
   &--my-2xl {
     p,
     ul,
+    ol,
     li {
       &:not(:first-child) {
         margin-top: 24px;

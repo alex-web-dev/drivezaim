@@ -2,8 +2,22 @@
   &__content {
     position: relative;
     padding: 72px 60px;
+    min-height: 476px;
     background-color: #000405;
-    overflow: hidden;
+    mask-image: radial-gradient(circle, black 100%, transparent 100.1%);
+
+    &--gradient {
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #000405 38.52%, rgba(217, 217, 217, 0) 58.28%);
+      }
+    }
   }
 
   &__main {
@@ -39,9 +53,14 @@
     object-position: left;
   }
 
+  &__btn {
+    margin-top: 36px;
+  }
+
   @media (max-width: 1180px) {
     &__content {
       padding: 55px 45px;
+      min-height: auto;
     }
 
     &__bg {
@@ -74,6 +93,30 @@
 
     &__bg {
       display: none;
+
+      &--money,
+      &--credit,
+      &--cash {
+        top: unset;
+        display: block;
+        bottom: 0;
+
+      }
+
+      &--money {
+        opacity: 0.35;
+        object-position: 28%;
+      }
+
+      &--credit {
+        opacity: 0.25;
+        object-position: right;
+      }
+
+      &--cash {
+        opacity: 0.3;
+        object-position: 35%;
+      }
     }
   }
 }

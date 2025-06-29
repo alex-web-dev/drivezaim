@@ -78,6 +78,14 @@
     }
   }
 
+  &--hover-svg-stroke-primary {
+    &:hover {
+      svg {
+        stroke: var(--color-primary);
+      }
+    }
+  }
+
   &--lh-16 {
     line-height: 1.6;
   }

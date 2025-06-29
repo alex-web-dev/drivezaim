@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   background-color: var(--color-gray-50);
+  mask-image: radial-gradient(circle, black 100%, transparent 100.1%);
 
   &--primary {
     background-color: var(--color-primary);
@@ -17,6 +18,14 @@
 
   &--h-xl {
     min-height: 420px;
+  }
+
+  &--items-center {
+    align-items: center;
+  }
+
+  &--overflow-hidden {
+    overflow: hidden;
   }
 
   &__circle {
@@ -40,6 +49,34 @@
         background-image: url("/img/icons/circle-thin.svg");
       }
     }
+
+    &--right {
+      &:before {
+        left: 120px;
+        bottom: -182px;
+      }
+    }
+
+    &--center {
+      &:before {
+        left: 33px;
+        bottom: -145px;
+      }
+    }
+
+    &--lg {
+      &:before {
+        width: 580px;
+        height: 580px;
+      }
+    }
+
+    &--xl {
+      &:before {
+        width: 665px;
+        height: 665px;
+      }
+    }
   }
 
   &__title {
@@ -58,6 +95,19 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 100%;
+
+    &--pl-lg {
+      padding-left: 32px;
+    }
+
+    &--pr-lg {
+      padding-right: 32px;
+    }
+
+    &--py-lg {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 
   &__body {
@@ -80,6 +130,14 @@
       &:not(:first-child) {
         margin-top: 12px;
       }
+    }
+
+    &--max-w-xs {
+      max-width: 58%;
+    }
+
+    &--mt-lg {
+      margin-top: 24px;
     }
   }
 
@@ -111,6 +169,15 @@
     &--mb-xl {
       margin-bottom: 43px;
     }
+
+    &--offset-right {
+      right: -62px;
+      bottom: -20px;
+    }
+
+    &--max-w-xs {
+      max-width: 42%;
+    }
   }
 
   &__img {
@@ -118,6 +185,24 @@
     align-self: center;
     max-width: 309px;
     flex: 0 0 auto;
+
+    &--lg {
+      max-width: 341px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+      margin-right: 24px;
+    }
+
+    &--my-lg {
+      margin-top: 14px;
+      margin-bottom: 14px;
+    }
+
+    &--self-end {
+      align-self: flex-end;
+    }
   }
 
   &__lines {
@@ -141,6 +226,20 @@
     gap: 20px;
     will-change: transform;
     animation: scroll 12s linear infinite;
+  }
+
+  &__link {
+    margin-top: 24px;
+  }
+
+  &__details {
+    width: 100%;
+  }
+
+  &__detail {
+    &:not(:first-child) {
+      margin-top: 16px;
+    }
   }
 
   @keyframes scroll {
@@ -220,6 +319,21 @@
     }
 
     &__main {
+      &--pl-lg {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      &--pr-lg {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      &--py-lg {
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+
       &--with-img {
         max-width: none;
       }
@@ -247,6 +361,10 @@
         &:not(:first-child) {
           margin-top: 12px;
         }
+      }
+
+      &--max-w-xs {
+        max-width: 100%;
       }
     }
 

@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <title>ДрайвЗайм - Кредит на исполнение контракта</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="container">
+          <div class="header__top">
+            <button class="link link--iflex link--semibold link--sm header__location">
+              <span class="icon link__icon link__icon--mx-xs">
+                <img class="icon__img" src="/img/icons/location.svg" alt="" />
+              </span>
+              <span>Новосибирск</span>
+            </button>
+            <ul class="header__callback-menu">
+              <li class="header__callback-item">
+                <a class="link link--semibold link--sm header__callback-link" href="tel:+78612112719">+7 (861) 211 27 19</a>
+              </li>
+              <li class="header__callback-item header__callback-item--mobile-hide">
+                <a class="link link--sm header__callback-link" href="#">whatsapp</a>
+              </li>
+              <li class="header__callback-item header__callback-item--mobile-hide">
+                <a class="link link--sm header__callback-link" href="#">telegram</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__bottom">
+            <a class="logo header__logo" href="index.html">
+              <img class="logo__img" src="/img/logo.svg" alt="" />
+            </a>
+            <nav class="menu header__menu">
+              <ul class="menu__list">
+                <li class="menu__item menu__item--has-children">
+                  <a class="link link--iflex link--sm link--semibold menu__link" href="#">
+                    <span>Клиентам</span>
+                    <span class="icon link__icon link__icon--mx-xs">
+                      <svg class="icon__img" width="12" height="8" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L6 6L1 1" stroke-width="1.5" />
+                      </svg>
+                    </span>
+                  </a>
+                  <div class="dropdown-menu box menu__dropdown">
+                    <div class="dropdown-menu__main">
+                      <ul class="dropdown-menu__list">
+                        <li class="dropdown-menu__item">
+                          <a class="link link--iflex link--sm link--semibold dropdown-menu__link" href="get-loan.html">
+                            Как получить займ?
+                          </a>
+                        </li>
+                        <li class="dropdown-menu__item">
+                          <a class="link link--iflex link--sm link--semibold dropdown-menu__link" href="pay-off-loan.html">
+                            Как погасить займ?
+                          </a>
+                        </li>
+                        <li class="dropdown-menu__item">
+                          <a class="link link--iflex link--sm link--semibold dropdown-menu__link" href="blog.html">Блог</a>
+                        </li>
+                        <li class="dropdown-menu__item">
+                          <a class="link link--iflex link--sm link--semibold dropdown-menu__link" href="about.html">О компании</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="menu-card dropdown-menu__card js-open-popup" data-popup-name="callback">
+                      <div class="menu-card__main">
+                        <div class="menu-card__info">
+                          <div class="title title--2 title--white menu-card__title">Оформить займ</div>
+                          <div class="text text--white menu-card__text">под залог авто</div>
+                        </div>
+                        <span class="btn-rect btn-rect--white menu-card__btn">
+                          <img class="btn-rect__icon" src="img/icons/next.svg" alt="" />
+                        </span>
+                      </div>
+                      <img class="menu-card__img" src="img/dropdown-menu/img.png" alt="" />
+                    </button>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--iflex link--sm link--semibold menu__link" href="investment.html">Инвесторам</a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--iflex link--sm link--semibold menu__link" href="partners.html">Партнерам</a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--iflex link--sm link--semibold menu__link" href="docs.html">Документы</a>
+                </li>
+                <li class="menu__item">
+                  <a class="link link--iflex link--sm link--semibold menu__link" href="contacts.html">Контакты и реквизиты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__btns">
+              <button class="btn btn--sm header__btns-item js-open-popup" data-popup-name="callback">Получить займ</button>
+              <button class="btn btn--sm btn--opacity-10 header__btns-item">Войти</button>
+            </div>
+            <button class="menu-toggle header__menu-toggle js-toggle-menu">
+              <span class="menu-toggle__lines"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu header__mobile-menu">
+        <div class="mobile-menu__content">
+          <div class="mobile-menu__body">
+            <div class="mobile-menu__header">
+              <a class="logo" href="index.html">
+                <img class="logo__img" src="/img/logo.svg" alt="" />
+              </a>
+              <button class="menu-toggle mobile-menu__toggle js-toggle-menu">
+                <span class="menu-toggle__lines"></span>
+              </button>
+            </div>
+            <div class="mobile-menu__main">
+              <button class="text text--iflex text--semibold mobile-menu__location">
+                <span class="icon text__icon text__icon--mx-xs">
+                  <img class="icon__img" src="/img/icons/location.svg" alt="" />
+                </span>
+                <span>Новосибирск</span>
+              </button>
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item accordion">
+                  <a class="link mobile-menu__link accordion__btn" href="#">
+                    <span>Клиентам</span>
+                    <span class="icon link__icon link__icon--mx-xs">
+                      <svg class="icon__img" width="12" height="8" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 1L6 6L1 1" stroke-width="1.5" />
+                      </svg>
+                    </span>
+                  </a>
+                  <div class="accordion__content">
+                    <div class="dropdown-menu box mobile-menu__dropdown accordion__main">
+                      <div class="dropdown-menu__main">
+                        <ul class="dropdown-menu__list">
+                          <li class="dropdown-menu__item">
+                            <a class="link link--iflex link--sm link--semibold dropdown-menu__link" href="get-loan.html">
+                              Как получить займ?
+                            </a>
+                          </li>
+                          <li class="dropdown-menu__item">
+                            <a class="link link--iflex link--sm link--semibold dropdown-menu__link" href="pay-off-loan.html"
+                              >Как погасить займ?</a
+                            >
+                          </li>
+                          <li class="dropdown-menu__item">
+                            <a class="link link--iflex link--sm link--semibold dropdown-menu__link" href="blog.html">Блог</a>
+                          </li>
+                          <li class="dropdown-menu__item">
+                            <a class="link link--iflex link--sm link--semibold dropdown-menu__link" href="about.html">О компании</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="menu-card dropdown-menu__card js-open-popup" data-popup-name="callback">
+                        <div class="menu-card__main">
+                          <div class="menu-card__info">
+                            <div class="title title--2 title--white menu-card__title">Оформить займ</div>
+                            <div class="text text--white menu-card__text">под залог авто</div>
+                          </div>
+                          <span class="btn-rect btn-rect--white menu-card__btn">
+                            <img class="btn-rect__icon" src="img/icons/next.svg" alt="" />
+                          </span>
+                        </div>
+                        <img class="menu-card__img" src="img/dropdown-menu/img.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link mobile-menu__link" href="investment.html">Инвесторам</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link mobile-menu__link" href="partners.html">Партнерам</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link mobile-menu__link" href="docs.html">Документы</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a class="link mobile-menu__link" href="contacts.html">Контакты и реквизиты</a>
+                </li>
+              </ul>
+              <div class="mobile-menu__main-bottom">
+                <ul class="mobile-menu__callback">
+                  <li class="mobile-menu__callback-item">
+                    <a class="link link--semibold mobile-menu__callback-link" href="tel:+78612112719">+7 (861) 211 27 19</a>
+                  </li>
+                  <li class="mobile-menu__callback-item mobile-menu__callback-item--mobile-hide">
+                    <a class="link mobile-menu__callback-link" href="#">whatsapp</a>
+                  </li>
+                  <li class="mobile-menu__callback-item mobile-menu__callback-item--mobile-hide">
+                    <a class="link mobile-menu__callback-link" href="#">telegram</a>
+                  </li>
+                </ul>
+                <div class="mobile-menu__btns">
+                  <button class="btn btn--full btn--sm mobile-menu__btns-item js-open-popup" data-popup-name="callback">
+                    Получить займ
+                  </button>
+                  <button class="btn btn--full btn--sm btn--opacity-10 mobile-menu__btns-item">Войти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="breadcrumb main__breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a class="text text--primary text--xs breadcrumb__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumb__item">
+              <span class="text text--primary text--xs breadcrumb__current">Клиентам</span>
+            </li>
+            <li class="breadcrumb__item">
+              <a class="text text--primary text--xs breadcrumb__link" href="car-loan-business.html">Автозайм для бизнеса</a>
+            </li>
+            <li class="breadcrumb__item">
+              <span class="text text--grey text--xs breadcrumb__current">Кредит на исполнение контракта</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__header">
+              <h2 class="title title--1 section__title">Кредит на исполнение контракта</h2>
+            </div>
+            <div class="invest-banner">
+              <div class="invest-banner__content invest-banner__content--gradient box">
+                <div class="invest-banner__main">
+                  <h2 class="title title--2 title--white invest-banner__title">
+                    Финансирование затрат на исполнение государственных контрактов 
+                  </h2>
+                  <div class="text-content text-content--white text-content--my-xl invest-banner__text">
+                    <ul>
+                      <li>Кредит на исполнение договора по 223-ФЗ, 44-ФЗ, 185-ФЗ</li>
+                      <li>Кредит на исполнение коммерческих договоров</li>
+                      <li>На любые суммы, электронный документооборот, без залога</li>
+                      <li>До 70% от суммы договора</li>
+                    </ul>
+                  </div>
+                  <button class="btn btn--px-xl invest-banner__btn">Оставить заявку</button>
+                </div>
+                <img class="invest-banner__bg invest-banner__bg--credit" src="img/credit-for-contract/banner-img.jpg" alt="" />
+              </div>
+            </div>
+            <div class="calc-full section__item section__item--mt-normal box">
+              <div class="calc-full__header calc-full__header--md-column">
+                <div class="calc-full__tabs-btns tabs-btns" data-tabs-name="calc">
+                  <button class="title title--2 title--white calc-full__tabs-btn tabs-btns__btn tabs-btns__btn--active"> Аннуитет </button>
+                  <button class="title title--2 title--white calc-full__tabs-btn tabs-btns__btn"> В конце срока </button>
+                </div>
+                <div class="text text--medium text--grey">Не является публичной офертой</div>
+              </div>
+              <div class="calc-full__tabs tabs-list" data-tabs-name="calc">
+                <div class="calc-full__tab tabs-list__item tabs-list__item--active">
+                  <div class="calc-full__main">
+                    <div class="calc-full__inputs">
+                      <div class="input-num calc-full__inputs-item">
+                        <div class="input-num__main">
+                          <div class="text text--sm text--grey input-num__label input-num__label--mb-0">Сумма займа, ₽</div>
+                          <input
+                            class="text text--xl text--semibold input-num__value js-imask"
+                            type="text"
+                            value="40 000 ₽"
+                            data-mask="int"
+                            data-mask-min="10000"
+                            data-mask-max="9999999"
+                            data-mask-text="₽" />
+                          <div
+                            class="input-num__slider input-num__slider--mt-sm noUi-bg-primary"
+                            data-min="10000"
+                            data-max="500000"
+                            data-start-min="40000"
+                            data-step="5000"></div>
+                        </div>
+                        <div class="input-num__footer">
+                          <span class="text text--white text--sm input-num__from">10 000 ₽</span>
+                          <span class="text text--white text--sm input-num__to">500 000 ₽</span>
+                        </div>
+                      </div>
+                      <div class="input-num calc-full__inputs-item">
+                        <div class="input-num__main">
+                          <div class="text text--sm text--grey input-num__label input-num__label--mb-0">Срок займа, мес</div>
+                          <input
+                            class="text text--xl text--semibold input-num__value js-imask"
+                            type="text"
+                            value="36"
+                            data-mask="int"
+                            data-mask-min="1"
+                            data-mask-max="99"
+                            data-mask-text="мес" />
+                          <div
+                            class="input-num__slider input-num__slider--mt-sm noUi-bg-primary"
+                            data-min="1"
+                            data-max="36"
+                            data-start-min="36"
+                            data-step="1"></div>
+                        </div>
+                        <div class="input-num__footer">
+                          <span class="text text--white text--sm input-num__from">1 мес</span>
+                          <span class="text text--white text--sm input-num__to">36 мес</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="calc-full__btns">
+                      <button class="btn btn--py-3xl btn--full calc-full__btns-item">Оформить займ</button>
+                      <a class="link link--sm link--iflex link--grey link--underline link--hover-grey calc-full__btns-link" href="#">
+                        график платежей
+                      </a>
+                    </div>
+                  </div>
+                  <div class="calc-full__footer">
+                    <div class="calc-full__details">
+                      <div class="calc-full__detail">
+                        <div class="text text--sm text--grey calc-full__detail-text">Ежемесячный платеж</div>
+                        <div class="title title--3 title--white calc-full__detail-value">515 000 ₽</div>
+                      </div>
+                      <div class="calc-full__detail">
+                        <div class="text text--sm text--grey calc-full__detail-text">Общая сумма выплаты</div>
+                        <div class="title title--3 title--white calc-full__detail-value">515 000 ₽</div>
+                      </div>
+                      <div class="calc-full__detail">
+                        <div class="text text--sm text--grey calc-full__detail-text">Сумма процентов</div>
+                        <div class="title title--3 title--white calc-full__detail-value">3 %</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calc-full__tab tabs-list__item">
+                  <div class="calc-full__main">
+                    <div class="calc-full__inputs">
+                      <div class="input-num calc-full__inputs-item">
+                        <div class="input-num__main">
+                          <div class="text text--sm text--grey input-num__label input-num__label--mb-0">Сумма займа, ₽</div>
+                          <input
+                            class="text text--xl text--semibold input-num__value js-imask"
+                            type="text"
+                            value="40 000 ₽"
+                            data-mask="int"
+                            data-mask-min="10000"
+                            data-mask-max="9999999"
+                            data-mask-text="₽" />
+                          <div
+                            class="input-num__slider input-num__slider--mt-sm noUi-bg-primary"
+                            data-min="10000"
+                            data-max="500000"
+                            data-start-min="40000"
+                            data-step="5000"></div>
+                        </div>
+                        <div class="input-num__footer">
+                          <span class="text text--white text--sm input-num__from">10 000 ₽</span>
+                          <span class="text text--white text--sm input-num__to">500 000 ₽</span>
+                        </div>
+                      </div>
+                      <div class="input-num calc-full__inputs-item">
+                        <div class="input-num__main">
+                          <div class="text text--sm text--grey input-num__label input-num__label--mb-0">Срок займа, мес</div>
+                          <input
+                            class="text text--xl text--semibold input-num__value js-imask"
+                            type="text"
+                            value="36"
+                            data-mask="int"
+                            data-mask-min="1"
+                            data-mask-max="99"
+                            data-mask-text="мес" />
+                          <div
+                            class="input-num__slider input-num__slider--mt-sm noUi-bg-primary"
+                            data-min="1"
+                            data-max="36"
+                            data-start-min="36"
+                            data-step="1"></div>
+                        </div>
+                        <div class="input-num__footer">
+                          <span class="text text--white text--sm input-num__from">1 мес</span>
+                          <span class="text text--white text--sm input-num__to">36 мес</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="calc-full__btns">
+                      <button class="btn btn--py-3xl btn--full calc-full__btns-item">Оформить займ</button>
+                      <a class="link link--sm link--iflex link--grey link--underline link--hover-grey calc-full__btns-link" href="#">
+                        график платежей
+                      </a>
+                    </div>
+                  </div>
+                  <div class="calc-full__footer">
+                    <div class="calc-full__details">
+                      <div class="calc-full__detail">
+                        <div class="text text--sm text--grey calc-full__detail-text">Ежемесячный платеж</div>
+                        <div class="title title--3 title--white calc-full__detail-value">515 000 ₽</div>
+                      </div>
+                      <div class="calc-full__detail">
+                        <div class="text text--sm text--grey calc-full__detail-text">Общая сумма выплаты</div>
+                        <div class="title title--3 title--white calc-full__detail-value">515 000 ₽</div>
+                      </div>
+                      <div class="calc-full__detail">
+                        <div class="text text--sm text--grey calc-full__detail-text">Сумма процентов</div>
+                        <div class="title title--3 title--white calc-full__detail-value">3 %</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section main__section">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__header">
+              <h2 class="title title--1 section__title">Условия займа</h2>
+            </div>
+            <div class="requirements">
+              <div class="requirements__columns">
+                <div class="requirements__left requirements__left--sm">
+                  <div class="require-card require-card--overflow-hidden require-card--primary requirements__left-item box">
+                    <div class="require-card__main require-card__main--with-img">
+                      <h3 class="title title--2 title--white require-card__title">Основные условия</h3>
+                      <div class="require-card__details">
+                        <div class="detail detail--white require-card__detail">
+                          <span class="text text--white detail__text">Ставка</span>
+                          <span class="detail__separator detail__separator--white"></span>
+                          <span class="text text--white detail__value">от 3% годовых</span>
+                        </div>
+                        <div class="detail detail--white require-card__detail">
+                          <span class="text text--white detail__text">Срок займа</span>
+                          <span class="detail__separator detail__separator--white"></span>
+                          <span class="text text--white detail__value">до 6 месяцев</span>
+                        </div>
+                        <div class="detail detail--white require-card__detail">
+                          <span class="text text--white detail__text">Размер займа</span>
+                          <span class="detail__separator detail__separator--white"></span>
+                          <span class="text text--white detail__value">до 5 000 000 ₽</span>
+                        </div>
+                        <div class="detail detail--white require-card__detail">
+                          <span class="text text--white detail__text">Минимальный срок регистрации компании</span>
+                          <span class="detail__separator detail__separator--white"></span>
+                          <span class="text text--white detail__value detail__value--xl">не менее 12 месяцев</span>
+                        </div>
+                        <div class="detail detail--white require-card__detail">
+                          <span class="text text--white detail__text detail__text--lg">Отрасль заемщика </span>
+                          <span class="detail__separator detail__separator--white"></span>
+                          <span class="text text--white detail__value">без ограничений по отраслям</span>
+                        </div>
+                        <div class="detail detail--white require-card__detail">
+                          <span class="text text--white detail__text">Место нахождения и место регистрации клиента</span>
+                          <span class="detail__separator detail__separator--white"></span>
+                          <span class="text text--white detail__value">без ограничений по регионам</span>
+                        </div>
+                      </div>
+                      <div class="require-card__footer">
+                        <button class="btn btn--white btn--px-xl require-card__btn js-open-popup" data-popup-name="callback">
+                          Хочу оформить займ
+                        </button>
+                      </div>
+                    </div>
+                    <img class="require-card__bg-img require-card__bg-img--offset-right" src="img/requirements/1.png" alt="" />
+                    <div
+                      class="require-card__circle require-card__circle--center require-card__circle--lg require-card__circle--thin"></div>
+                  </div>
+                </div>
+                <div class="requirements__right">
+                  <div class="require-card require-card--items-center requirements__right-item box">
+                    <div class="require-card__main require-card__main">
+                      <h3 class="title title--2 require-card__title">Документы необходимые для рассмотрения</h3>
+                      <div class="text-content text-content--mark-primary require-card__info">
+                        <ul>
+                          <li>Заявление на предоставление займа, согласие на запрос кредитной истории;</li>
+                          <li>
+                            Бухгалтерская отчетность (баланс и отчет о финансовых результатах) за последний завершенный год и на последнюю
+                            отчетную дату;
+                          </li>
+                          <li>Карточка 51 счета за последние полные 12 мес.;</li>
+                          <li>Ссылка на контракт или контракт с ЭЦП или скан контракта;</li>
+                        </ul>
+                      </div>
+                      <div
+                        class="text-content text-content--mark-primary require-card__info require-card__info--mt-lg require-card__info--max-w-xs">
+                        <ul>
+                          <li>Паспорт ЕИО и учредителей с долей более 10%;</li>
+                          <li>Последний актуальный Устав;</li>
+                          <li>Подтверждение полномочий ЕИО (решение/протокол участников);</li>
+                          <li>Договор аренды или документы на право собственности для офиса/склада.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <img class="require-card__bg-img require-card__bg-img--max-w-xs" src="/img/credit-for-contract/doc.png" alt="" />
+                  </div>
+                  <div class="require-card require-card--items-center requirements__right-item box">
+                    <div class="require-card__main require-card__main">
+                      <h3 class="title title--2 require-card__title">Особые условия</h3>
+                      <div class="text-content text-content--mark-primary require-card__info">
+                        <ul>
+                          <li
+                            >Поручительство физ. лица, являющееся учредителем/участником/акционером клиента с долей участия/ количеством
+                            акций более 10% от уставного капитала</li
+                          >
+                          <li>Поручительство единоличного исполнительного органа (ЕИО)</li>
+                          <li
+                            >Предоставление соглашения на без акцептное списание денежных средств со счёта, на который поступают денежные
+                            средства по контракту (Может быть отлагательным условием)</li
+                          >
+                          <li>Возможность пролонгации займа на индивидуальных условиях</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section main__section">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__header">
+              <h2 class="title title--1 section__title">Необходимые документы</h2>
+            </div>
+            <div class="info-card info-card--gray-50 section__item section__item--mt-sm box">
+              <div class="title title--2 info-card__title">Для индивидуального предпринимателя</div>
+              <div class="text-content text-content--my-lg text-content--mark-primary info-card__text info-card__text--mt-xl">
+                <ul>
+                  <li>Анкета - заявление о предоставлении займа индивидуальному предпринимателю</li>
+                  <li>Карточка с реквизитами заявителя</li>
+                  <li>Копия паспорта ИП – заявителя (разворот с фото, разворот с регистрацией)</li>
+                </ul>
+                <p><b>Бухгалтерские и финансовые документы</b></p>
+                <ul>
+                  <li>
+                    Выписка из обслуживающих банков по расчётным счетам за последние 12 месяцев из системы банк – клиент, с заверенной
+                    первой страницей подписью и печатью. Если деятельность ИП осуществлялась менее 12 месяцев, то с начала деятельности
+                  </li>
+                  <li>Налоговые декларации с подтверждением факта подачи в налоговый орган</li>
+                  <li>
+                    <p><b>Упрощенная система налогообложения:</b> книга учета доходов/расходов</p>
+                  </li>
+                  <li>
+                    <p><b>Единый налог на вмененный доход:</b> декларация по единому налогу на вмененный доход</p>
+                  </li>
+                  <li>
+                    <p><b>Общая система налогообложения:</b> декларация по НДС</p>
+                  </li>
+                  <li>
+                    <p><b>Патентная система налогообложения:</b> патент на право применения системы налогообложения</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-content text-content--grey info-card__text--mt-lg">
+                <p>
+                  *Все документы предоставляются в виде скан-копий, заверенных подписью руководителя и печатью компании.
+                  <br />
+                  **В ходе анализа заявки могут быть запрошены дополнительные документы и расшифровки по отчётности.
+                </p>
+              </div>
+            </div>
+            <div class="info-card info-card--gray-50 section__item section__item--mt-sm box">
+              <div class="title title--2 info-card__title">Для юридического лица</div>
+              <div class="text-content text-content--my-lg text-content--mark-primary info-card__text info-card__text--mt-xl">
+                <ul>
+                  <li>Анкета - заявление о предоставлении займа юридическому лицу</li>
+                  <li>
+                    <p>Анкета физического лица / Руководителя / Бенефициарного владельца<sup>1</sup> / Поручителя</p>
+                  </li>
+                  <li>Карточка с реквизитами организации – заявителя</li>
+                  <li>Карточка с реквизитами установочного центра (если применимо)</li>
+                </ul>
+                <p><b>Копии документов, удостоверяющих личность</b></p>
+                <ul>
+                  <li>Копия паспорта Руководителя (разворот с фото, разворот с регистрацией)</li>
+                  <li>Копия паспорта Бенефициарного владельца (разворот с фото, разворот с регистрацией)</li>
+                </ul>
+                <p><b>Документы, запрашиваемые для проведения юридической экспертизы</b></p>
+                <ul>
+                  <li>Копия устава и последней страницы (действующая редакция со всеми изменениями и дополнениями)</li>
+                  <li>Копия договора аренды или свидетельства о праве собственности на занимаемые помещения</li>
+                  <li>Копия документа подтверждающего полномочия Руководителя (протокол/решение об избрании)</li>
+                  <li>Лицензии (разрешения) на право осуществления деятельности (при наличии)</li>
+                  <li>Протокол об одобрении крупной сделки (в случае если сделка является крупной)</li>
+                </ul>
+                <p><b>Бухгалтерские и финансовые документы</b></p>
+                <ul>
+                  <li>Оборотно-сальдовая ведомость по счёту 51 в помесячной разбивке за последние 6 месяцев в разрезе Банков</li>
+                  <li>
+                    <p>
+                      <b>Общая система налогообложения:</b> бухгалтерская отчетность (Форма №1, Форма №2) за последние 5 отчетных периодов
+                      (либо за имеющееся количество периодов с даты регистрации), с подтверждением факта подачи в налоговый орган по
+                      отчетности за год
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <b>Упрощенная система налогообложения:</b> налоговая декларация за последний год с подтверждением факта подачи в
+                      налоговый орган; бухгалтерская отчетность (Форма №1, Форма №2) за последние 5 отчетных периодов (либо за имеющееся
+                      количество периодов с даты регистрации), с подтверждением факта подачи в налоговый орган по отчетности за год
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <b>Единый налог на вмененный доход:</b> налоговая декларация за последний отчетный год и последний отчетный период, с
+                      подтверждением факта подачи в налоговый орган за год; бухгалтерская отчетность (Форма №1, Форма №2) за последние 5
+                      отчетных периодов (либо за имеющееся количество периодов с даты регистрации), с подтверждением факта подачи в
+                      налоговый орган по отчетности за год
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-content text-content--grey info-card__text--mt-lg">
+                <ol>
+                  <li>
+                    Физическое лицо, которое в конечном счете прямо или косвенно (через третьих лиц, в том числе через юридическое лицо,
+                    нескольких юридических лиц либо группу связанных юридических лиц) владеет (имеет преобладающее участие более 25
+                    процентов в капитале) клиентом - юридическим лицом либо прямо или косвенно контролирует действия клиента, в том числе
+                    имеет возможность определять решения, принимаемые клиентом.
+                  </li>
+                </ol>
+                <p>
+                  *Все документы предоставляются в виде скан-копий, заверенных подписью руководителя и печатью компании.
+                  <br />
+                  **В ходе анализа заявки могут быть запрошены дополнительные документы и расшифровки по отчётности.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__section">
+        <div class="container">
+          <div class="section__content">
+            <div class="team-banner team-banner--gray-50 section__cards-item section__cards-item--col-12 box">
+              <div class="team-banner__main team-banner__main--sm">
+                <h3 class="title title--1 team-banner__title team-banner__title--mb-xs">Запишитесь на&nbsp;консультацию</h3>
+                <div class="text-content text-content--mark-primary text-content--my-lg team-banner__info">
+                  <p>
+                    <b>Не уверены, подходит ли вам наше предложение? Просто оставьте заявку — и мы:</b>
+                  </p>
+                  <ul>
+                    <li>Проконсультируем подробно и без давления</li>
+                    <li>Подберём решение, исходя из ваших потребностей</li>
+                    <li>Ответим на все вопросы — просто и понятно</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="team-banner__img-box team-banner__img-box--consultation">
+                <img class="team-banner__img" src="/img/credit-for-contract/consultation.png" alt="" />
+              </div>
+              <div class="team-banner__addition">
+                <p class="text text--grey text--right team-banner__addition-text">
+                  Никаких обязательств с вашей стороны — только честная экспертная информация, чтобы вы могли принять взвешенное решение.
+                </p>
+                <div class="team-banner__addition-footer">
+                  <button class="btn btn--px-xl team-banner__addition-btn">Оставить заявку</button>
+                </div>
+              </div>
+              <div class="team-banner__circle team-banner__circle--lg team-banner__circle--consultation"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--black main__section">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__header">
+              <h2 class="title title--1 title--white section__title">Как получить кредит на исполнение контракта?</h2>
+            </div>
+            <div class="advantages">
+              <div class="advantages__list">
+                <div class="advantage-item advantage-item--black-light advantages__item box">
+                  <div class="title title--2 title--white advantage-item__num advantage-item__num--black">1</div>
+                  <h3 class="title title--2 title--white advantage-item__title">Заполнить заявку на сайте</h3>
+                  <p class="text text--grey advantage-item__text">
+                    Укажите сумму займа и другие параметры. Предварительный ответ по займу будет готов за 30 минут.
+                  </p>
+                </div>
+                <div class="advantage-item advantage-item--black-light advantages__item box">
+                  <div class="title title--2 title--white advantage-item__num advantage-item__num--black">2</div>
+                  <h3 class="title title--2 title--white advantage-item__title">Предоставьте документы</h3>
+                  <p class="text text--grey advantage-item__text">
+                    Предоставьте нашим специалистам необходимые документы не выходя из офиса для получения займа и ожидайте решение.
+                  </p>
+                </div>
+                <div class="advantage-item advantage-item--black-light advantages__item box">
+                  <div class="title title--2 title--white advantage-item__num advantage-item__num--black">3</div>
+                  <h3 class="title title--2 title--white advantage-item__title">Получите финансирование</h3>
+                  <p class="text text--grey advantage-item__text">
+                    Одобренную сумму займа вы получите на банковский счет, указанный в документах.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--black section--pb-xl">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__header">
+              <h2 class="title title--1 title--white section__title">Отзывы о нас</h2>
+              <div class="section__header-btns">
+                <button class="btn-rect btn-rect--black-light section__header-btn reviews-btn-prev">
+                  <img class="btn-rect__icon btn-rect__icon--rotate-180" src="img/icons/next-white.svg" alt="" />
+                </button>
+                <button class="btn-rect btn-rect--black-light section__header-btn reviews-btn-next">
+                  <img class="btn-rect__icon" src="img/icons/next-white.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="reviews">
+              <div class="reviews__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review-item reviews__slide-item box">
+                      <div class="review-item__main">
+                        <div class="text text--sm text--grey review-item__author">Андрей Ф.</div>
+                        <div class="title title--3 title--white title--lh-14 review-item__title">
+                          Не пришлось никуда ехать, получил одобрение буквально за 30-40 минут
+                        </div>
+                        <p class="text text--grey review-item__text">
+                          На моей памяти это первая такая компания, куда можно не приезжать, что очень удобно. Можно загрузить фотографии
+                          документов и получить одобрение буквально через 30-40 минут.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review-item reviews__slide-item box">
+                      <div class="review-item__main">
+                        <div class="text text--sm text--grey review-item__author">Иван С.</div>
+                        <div class="title title--3 title--white title--lh-14 review-item__title">
+                          Компания очень понравилась, оформляют по ПТС авто, не требуют доверенностей и всяких договоров купли продажи, что
+                          несомненно плюс.
+                        </div>
+                        <p class="text text--clamp text--grey review-item__text">
+                          Машиной пользуюсь пока выплачиваю и хочу погасить досрочно, за 2 года вместе 3 лет.
+                        </p>
+                        <a class="link link--iflex link--white link--semibold review-item__more" href="#">
+                          <span>Читать далее</span>
+                          <span class="icon link__icon">
+                            <img class="icon__img" src="img/icons/next-white.svg" alt="" />
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review-item reviews__slide-item box">
+                      <div class="review-item__main">
+                        <div class="text text--sm text--grey review-item__author">Мария К.</div>
+                      </div>
+                      <div class="video review-item__video">
+                        <div class="video__content video__content--xl">
+                          <div class="video__main">
+                            <iframe
+                              data-src="https://www.youtube.com/embed/Gx543KbuGFY"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin"
+                              allowfullscreen></iframe>
+                          </div>
+                          <div class="video__preview">
+                            <div class="video__preview-main">
+                              <div class="circle circle--primary circle--lg video__preview-play">
+                                <img src="img/icons/play-white.svg" alt="" />
+                              </div>
+                            </div>
+                            <img class="video__preview-img" src="img/reviews/video-preview.jpg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review-item reviews__slide-item box">
+                      <div class="review-item__main">
+                        <div class="text text--sm text--grey review-item__author">Андрей Ф.</div>
+                        <div class="title title--3 title--white title--lh-14 review-item__title">
+                          Не пришлось никуда ехать, получил одобрение буквально за 30-40 минут
+                        </div>
+                        <p class="text text--grey review-item__text">
+                          На моей памяти это первая такая компания, куда можно не приезжать, что очень удобно. Можно загрузить фотографии
+                          документов и получить одобрение буквально через 30-40 минут.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review-item reviews__slide-item box">
+                      <div class="review-item__main">
+                        <div class="text text--sm text--grey review-item__author">Иван С.</div>
+                        <div class="title title--3 title--white title--lh-14 review-item__title">
+                          Компания очень понравилась, оформляют по ПТС авто, не требуют доверенностей и всяких договоров купли продажи, что
+                          несомненно плюс.
+                        </div>
+                        <p class="text text--clamp text--clamp-1 text--grey review-item__text">
+                          Машиной пользуюсь пока выплачиваю и хочу погасить досрочно, за 2 года вместе 3 лет.
+                        </p>
+                        <a class="link link--white link--iflex review-item__more" href="#">
+                          <span>Читать далее</span>
+                          <span class="icon link__icon">
+                            <img class="icon__img" src="img/icons/next-white.svg" alt="" />
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review-item reviews__slide-item box">
+                      <div class="review-item__main">
+                        <div class="text text--sm text--grey review-item__author">Мария К.</div>
+                      </div>
+                      <div class="video review-item__video">
+                        <div class="video__content video__content--xl">
+                          <div class="video__main">
+                            <iframe
+                              data-src="https://www.youtube.com/embed/Gx543KbuGFY"
+                              frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin"
+                              allowfullscreen></iframe>
+                          </div>
+                          <div class="video__preview">
+                            <div class="video__preview-main">
+                              <div class="circle circle--primary video__preview-play">
+                                <img src="img/icons/play-white.svg" alt="" />
+                              </div>
+                            </div>
+                            <img class="video__preview-img" src="img/reviews/video-preview.jpg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section main__section">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__header">
+              <h2 class="title title--1 section__title">Почему выбирают нас</h2>
+            </div>
+            <div class="features">
+              <div class="features__list">
+                <div class="feature-item features__item box">
+                  <div class="feature-item__icon-box">
+                    <img class="feature-item__icon" src="img/features/2.svg" alt="" />
+                  </div>
+                  <h3 class="title title--2 feature-item__title">Действуем в&nbsp;интересах клиентов</h3>
+                  <p class="text text--grey feature-item__text">
+                    Обеспечиваем индивидуальный подход и максимальную пользу от сотрудничества
+                  </p>
+                </div>
+                <div class="feature-item features__item box">
+                  <div class="feature-item__icon-box">
+                    <img class="feature-item__icon" src="img/features/1.svg" alt="" />
+                  </div>
+                  <h3 class="title title--2 feature-item__title">Гарантируем отсутствие скрытых рисков</h3>
+                  <p class="text text--grey feature-item__text">
+                    Полная прозрачность условий, никаких неожиданных платежей или подводных камней.
+                  </p>
+                </div>
+                <div class="feature-item features__item box">
+                  <div class="feature-item__icon-box">
+                    <img class="feature-item__icon" src="img/features/5.svg" alt="" />
+                  </div>
+                  <h3 class="title title--2 feature-item__title">Работаем в&nbsp;рамках закона</h3>
+                  <p class="text text--grey feature-item__text">
+                    Строгое соблюдение законодательства, прозрачность деятельности и защита интересов клиентов на всех этапах
+                    сотрудничества.
+                  </p>
+                </div>
+                <div class="feature-item features__item box">
+                  <div class="feature-item__icon-box">
+                    <img class="feature-item__icon" src="img/features/6.svg" alt="" />
+                  </div>
+                  <h3 class="title title--2 feature-item__title">Предлагаем выгодные условия</h3>
+                  <p class="text text--grey feature-item__text">
+                    Индивидуальные решения, чтобы сотрудничество было не только комфортным, но и максимально прибыльным для вас.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section main__section">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__header">
+              <div class="title title--1 faq__title">Часто задаваемые вопросы</div>
+            </div>
+            <div class="faq">
+              <div class="faq__list">
+                <div class="faq-item accordion faq__item">
+                  <button class="text text--xl text--semibold text--left accordion__btn faq-item__btn">
+                    <span>Какие документы нужны для оформления?</span>
+                    <span class="btn-rect btn-rect--gray-100 faq-item__btn-icon">
+                      <svg class="btn-rect__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L6 -3.57628e-07" stroke-width="1.5" />
+                        <path d="M0 6H12" stroke-width="1.5" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text text--white accordion__main faq-item__main">
+                      <div class="faq-item__body">
+                        <p>
+                          После получения займа вы пользуетесь своим транспортным средством как и до этого. Вы так же можете поставить
+                          автомобиль к нам на охраняемую парковку.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq__item">
+                  <button class="text text--xl text--semibold text--left accordion__btn faq-item__btn">
+                    <span>После оформления автомобиль остаётся у Вас?</span>
+                    <span class="btn-rect btn-rect--gray-100 faq-item__btn-icon">
+                      <svg class="btn-rect__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L6 -3.57628e-07" stroke-width="1.5" />
+                        <path d="M0 6H12" stroke-width="1.5" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text text--white accordion__main faq-item__main">
+                      <div class="faq-item__body">
+                        <p>
+                          После получения займа вы пользуетесь своим транспортным средством как и до этого. Вы так же можете поставить
+                          автомобиль к нам на охраняемую парковку.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq__item">
+                  <button class="text text--xl text--semibold text--left accordion__btn faq-item__btn">
+                    <span>Возможно ли получение займа с пропиской из другого региона?</span>
+                    <span class="btn-rect btn-rect--gray-100 faq-item__btn-icon">
+                      <svg class="btn-rect__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L6 -3.57628e-07" stroke-width="1.5" />
+                        <path d="M0 6H12" stroke-width="1.5" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text text--white accordion__main faq-item__main">
+                      <div class="faq-item__body">
+                        <p>
+                          После получения займа вы пользуетесь своим транспортным средством как и до этого. Вы так же можете поставить
+                          автомобиль к нам на охраняемую парковку.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq__item">
+                  <button class="text text--xl text--semibold text--left accordion__btn faq-item__btn">
+                    <span>Могу оформить займ, если владею автомобилем по договору купли-продажи (ДКП)?</span>
+                    <span class="btn-rect btn-rect--gray-100 faq-item__btn-icon">
+                      <svg class="btn-rect__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L6 -3.57628e-07" stroke-width="1.5" />
+                        <path d="M0 6H12" stroke-width="1.5" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text text--white accordion__main faq-item__main">
+                      <div class="faq-item__body">
+                        <p>
+                          После получения займа вы пользуетесь своим транспортным средством как и до этого. Вы так же можете поставить
+                          автомобиль к нам на охраняемую парковку.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item accordion faq__item">
+                  <button class="text text--xl text--semibold text--left accordion__btn faq-item__btn">
+                    <span>Когда я могу полностью закрыть займ?</span>
+                    <span class="btn-rect btn-rect--gray-100 faq-item__btn-icon">
+                      <svg class="btn-rect__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 12L6 -3.57628e-07" stroke-width="1.5" />
+                        <path d="M0 6H12" stroke-width="1.5" />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class="accordion__content">
+                    <div class="text text--white accordion__main faq-item__main">
+                      <div class="faq-item__body">
+                        <p>
+                          После получения займа вы пользуетесь своим транспортным средством как и до этого. Вы так же можете поставить
+                          автомобиль к нам на охраняемую парковку.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section main__section">
+        <div class="container">
+          <div class="section__content">
+            <div class="section__header section__header--mb-sm">
+              <h2 class="title title--1 section__title">Запишитесь на консультацию</h2>
+            </div>
+            <div class="callback-banner box">
+              <div class="callback-banner__main">
+                <h3 class="title title--2 title--white callback-banner__title">Заполните форму, и мы свяжемся с Вами в течении 5 минут</h3>
+                <button class="btn btn--white btn--full btn--py-xl callback-banner__btn js-open-popup" data-popup-name="callback">
+                  Оформить займ
+                </button>
+                <p class="text text--xs text--white-05 text--link-line callback-banner__privacy">
+                  Нажимая на кнопку, вы соглашаетесь c
+                  <a href="#">политикой конфиденциальности</a>
+                  , с
+                  <a href="#">использованием простой электронной подписи</a>
+                  и
+                  <a href="#">обработкой персональных данных</a>
+                  .
+                </p>
+              </div>
+              <div class="callback-banner__img-box">
+                <img class="callback-banner__img" src="img/callback-banner.png" alt="" />
+              </div>
+              <div class="callback-banner__circle"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__cards">
+            <div class="footer-card footer__cards-item box">
+              <button class="text text--iflex text--xl text--semibold footer-card__location">
+                <span class="icon text__icon">
+                  <img class="icon__img" src="/img/icons/location.svg" alt="" />
+                </span>
+                <span>Новосибирск</span>
+              </button>
+              <div class="footer-card__contacts">
+                <a class="link link--xl link--semibold footer-card__contact" href="tel:+78003009259">8 800 300 92 59</a>
+                <a class="link link--xl link--grey footer-card__contact" href="mailto:info@drivezaim.ru">info@drivezaim.ru</a>
+                <div class="text text--xl text--grey footer-card__address">ул. Каменская, 55, оф. 26</div>
+                <a class="link link--sm link--semibold link--underline link--hover-black footer-card__map-btn" href="#">
+                  Посмотреть в Яндекс.Картах
+                </a>
+              </div>
+              <div class="footer-card__social-btns">
+                <button class="btn-rect footer-card__social-btn">
+                  <img class="btn-rect__icon" src="img/icons/whatsapp-grey.svg" alt="" />
+                </button>
+                <button class="btn-rect footer-card__social-btn">
+                  <img class="btn-rect__icon" src="img/icons/telegram-grey.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="footer-card footer-card--p-xs footer__cards-item box">
+              <div class="footer-card__app">
+                <div class="footer-card__app-info">
+                  <button class="text text--semibold text--left footer-card__app-title">Скачайте мобильное приложение ДрайвЗайм</button>
+                  <p class="text text--sm text--grey footer-card__text">На iOs и Android</p>
+                </div>
+                <div class="footer-card__app-qr">
+                  <img src="img/footer/qr.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="footer-card footer__cards-item box">
+              <div class="footer-card__callback">
+                <div class="footer-card__callback-info">
+                  <button class="text text--semibold text--left footer-card__callback-title">Есть ошибка на сайте?</button>
+                  <p class="text text--sm text--grey footer-card__text">Нам важен ваш фидбек</p>
+                </div>
+                <button class="btn-rect btn-rect--white footer-card__callback-btn">
+                  <img class="btn-rect__icon" src="img/icons/next-grey.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="footer__main box">
+            <div class="text text--sm text--my-xl footer__top-text">
+              <p>
+                Срок действия договора займа от 2 (двух) до 36 (тридцати шести месяцев) (возможна пролонгация). Требования к заемщикам:
+                возраст от 18, наличие автомобиля в собственности. Необходимые документы: -Анкета-Заявление; - Паспорт гражданина Российской
+                Федерации; - Паспорт транспортного средства (при оформлении под залог Транспортного средства); - Свидетельство о регистрации
+                ТС (при оформлении под залог Транспортного средства); - иные документы в зависимости от выбранного Заемщиком вида займа.
+                Условия предоставления займа Сумма займа от 15 000т.р. до 500 000 т.р. - для физ. лиц, от 100 000 т.р. до 5 000 000 р. – для
+                юр. лиц и ИП. Процентная ставка по займу от 2% до 8,3% в месяц. От 24 % годовых до 99,6% годовых. Полная стоимость займа
+                составляет от 24% годовых до 99,6% годовых. 
+              </p>
+            </div>
+            <div class="footer__privacy">
+              <ul class="footer__privacy-list">
+                <li class="footer__privacy-item">
+                  <a class="link link--sm link--semibold footer__privacy-link" href="#">Политика конфиденциальности</a>
+                </li>
+                <li class="footer__privacy-item">
+                  <a class="link link--sm link--semibold footer__privacy-link" href="#">Соглашение об использовании файлов cookie</a>
+                </li>
+                <li class="footer__privacy-item">
+                  <a class="link link--sm link--semibold footer__privacy-link" href="docs.html">Документы</a>
+                </li>
+              </ul>
+            </div>
+            <div class="text text--sm text--grey text--link-line text--my-xl footer__privacy-text">
+              <p>
+                © 2017 - 2022. Общество с ограниченной ответственностью «Микрокредитная компания «Сибиряк». ИНН: 5407962868, ОГРН:
+                1175476030993. Регистрационный номер записи ООО «МКК «Сибиряк» в государственном реестре микрофинансовых организаций
+                1703550008233. Дата внесения сведений о юридическом лице в государственный реестр микрофинансовых организаций 27.04.2017 г.
+                <br />
+                <a href="https://cbr.ru/" target="_blank">Сайт Банка России</a>
+                <a href="https://cbr.ru/Reception/" target="_blank">Интернет-приемная Банка России</a>
+                Страница сайта Банка России, содержащая&nbsp;<a href="https://cbr.ru/microfinance/registry/"
+                  >государственный реестр микрофинансовых организаций</a
+                >&nbsp;.
+                <br />
+                <a href="https://cbr.ru/microfinance/registry/">Ссылка на сайт ФССП</a>
+                , содержащий форму для подачи жалоб и обращений на нарушение прав и законных интересов физ лиц при осуществлении
+                деятельности по возврату просроченной задолженности
+              </p>
+              <p>
+                <a
+                  class="text__no-line"
+                  href="https://xn--80aafgrkdy3a.xn--p1ai/storage/uploads/files/119/scVqpZdGyAuBZktXh2PewlVZHLBz8iWHPWDjtRxs.pdf"
+                  target="_blank">
+                  Потребители финансовых услуг вправе направить обращение финансовому уполномоченному
+                </a>
+                в соответствии со статьями 15-19 Федерального закона от 4 июня 2018 года N 123-ФЗ «Об уполномоченном по правам потребителей
+                финансовых услуг» (Собрание законодательства Российской Федерации, 2018, N 24, ст. 3390). <br />
+                Место нахождения, почтовый адрес и номер телефона службы обеспечения деятельности финансового уполномоченного: 119017, г.
+                Москва, Старомонетный переулок, дом 3, АНО «СОДФУ», тел. 8&nbsp;(800)&nbsp;200&nbsp;00&nbsp;10, адрес официального сайта
+                финансового уполномоченного
+                <a href="https://finombudsman.ru/" target="_blank">https://finombudsman.ru</a>
+                <br />
+                С 16.05.2017 ООО "МКК "Сибиряк" является членом саморегулируемой организации "Мир" - 107078, г. Москва Орликов переулок, д.
+                5, стр. 1, этаж 2, пом. 11, info@npmir.ru телефон +7 (495) 258-8705.
+                <a href="https://finombudsman.ru/" target="_blank">npmir.ru</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="backdrop"></div>
+
+    <div class="popup popup--mobile-full" data-popup-name="callback">
+      <div class="popup__body">
+        <div class="popup__dialog">
+          <div class="popup-content popup__content box">
+            <div class="popup-content__header">
+              <div class="title title--3 popup-content__title">Оставить заявку</div>
+              <button class="icon popup-content__close js-close-popup">
+                <img class="icon__img" src="img/icons/close-grey.svg" alt="" />
+              </button>
+            </div>
+            <div class="callback-form popup-content__form">
+              <div class="callback-form__calc-inputs">
+                <div class="input-num callback-form__calc-input">
+                  <div class="input-num__main input-num__main--gray-50">
+                    <div class="text text--sm text--grey input-num__label">Сумма займа, ₽</div>
+                    <input
+                      class="text text--xl text--semibold input-num__value js-imask"
+                      type="text"
+                      value="40 000 ₽"
+                      data-mask="int"
+                      data-mask-min="10000"
+                      data-mask-max="9999999"
+                      data-mask-text="₽" />
+                    <div
+                      class="input-num__slider noUi-bg-primary"
+                      data-min="10000"
+                      data-max="500000"
+                      data-start-min="40000"
+                      data-step="5000"></div>
+                  </div>
+                  <div class="input-num__footer">
+                    <span class="text text--grey text--sm input-num__from">10 000 ₽</span>
+                    <span class="text text--grey text--sm input-num__to">500 000 ₽</span>
+                  </div>
+                </div>
+                <div class="input-num callback-form__calc-input">
+                  <div class="input-num__main input-num__main--gray-50">
+                    <div class="text text--sm text--grey input-num__label">Срок займа, мес</div>
+                    <input
+                      class="text text--xl text--semibold input-num__value js-imask"
+                      type="text"
+                      value="36"
+                      data-mask="int"
+                      data-mask-min="1"
+                      data-mask-max="99"
+                      data-mask-text="мес" />
+                    <div class="input-num__slider noUi-bg-primary" data-min="1" data-max="36" data-start-min="36" data-step="1"></div>
+                  </div>
+                  <div class="input-num__footer">
+                    <span class="text text--grey text--sm input-num__from">1 мес</span>
+                    <span class="text text--grey text--sm input-num__to">36 мес</span>
+                  </div>
+                </div>
+              </div>
+              <div class="input callback-form__item">
+                <div class="input__main">
+                  <input
+                    class="input__field input__field--gray-50 js-imask"
+                    type="text"
+                    placeholder="Номер телефона"
+                    data-mask="+{7} (000) 000-00-00" />
+                </div>
+              </div>
+              <div class="input callback-form__item">
+                <div class="input__main">
+                  <input class="input__field input__field--gray-50" type="text" placeholder="Гос номер авто" />
+                </div>
+              </div>
+              <p class="text text--xs text--grey text--link-line callback-form__privacy">
+                Нажимая на кнопку, вы даете согласие <br />
+                на обработку персональных данных и соглашаетесь с
+                <a href="#">политикой конфиденциальности</a>
+                , с
+                <a href="#">использованием простой электронной подписи</a>
+                и
+                <a href="#">обработкой персональных данных</a>
+              </p>
+              <div class="callback-form__btns">
+                <button class="btn btn--full btn--py-lg callback-form__btns-item">Получить займ</button>
+                <button class="btn btn--iflex btn--border-blue btn--medium btn--full callback-form__btns-item">
+                  <span class="icon icon--lg btn__icon btn__icon--mx-lg">
+                    <img class="icon__img" src="img/icons/gosuslugi.svg" alt="" />
+                  </span>
+                  <span>Войти через Госуслуги</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup__backdrop"></div>
+    </div>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
