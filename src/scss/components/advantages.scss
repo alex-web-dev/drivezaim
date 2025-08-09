@@ -1,4 +1,8 @@
 .advantages {
+  &__title {
+    margin-bottom: 12px;
+  }
+
   &__list {
     margin-top: -12px;
     margin-left: -12px;
@@ -10,11 +14,23 @@
     margin-top: 12px;
     margin-left: 12px;
     width: calc(33.33% - 12px);
+
+    &--h-lg {
+      min-height: 316px;
+    }
+
+    &--col-8 {
+      width: calc(100% / 12 * 8 - 12px);
+    }
   }
 
   @media (max-width: 1180px) {
     &__item {
       width: calc(50% - 12px);
+
+      &--col-8 {
+        width: calc(100% - 12px);
+      }
     }
   }
 

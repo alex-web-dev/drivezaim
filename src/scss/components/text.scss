@@ -48,6 +48,10 @@
     line-height: 1.4;
   }
 
+  &--lh-143 {
+    line-height: 1.43;
+  }
+
   &--lh-16 {
     line-height: 1.6;
   }
@@ -225,6 +229,14 @@
     }
   }
 
+  &--my-2xl {
+    p {
+      &:not(:first-child) {
+        margin-top: 24px;
+      }
+    }
+  }
+
   &--b-black {
     b {
       color: var(--color-black);
@@ -294,7 +306,8 @@
   }
 
   @media (max-width: 767px) {
-    &--my-xl {
+    &--my-xl,
+    &--my-2xl {
       p {
         &:not(:first-child) {
           margin-top: 16px;

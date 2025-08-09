@@ -1,0 +1,56 @@
+.loan-info {
+  position: relative;
+  padding-top: 60px;
+  overflow: hidden;
+  background-color: var(--color-gray-100);
+
+  &__main {
+    position: relative;
+    z-index: 1;
+    max-width: 443px;
+  }
+
+  &__text {
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 1280px) {
+    &__bg {
+      right: -90px;
+    }
+  }
+
+  @media (max-width: 1180px) {
+    &__bg {
+      right: 0;
+    }
+
+    &__main {
+      max-width: 640px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__main {
+      max-width: 395px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 24px 20px;
+    
+    &__bg {
+      display: none;
+    }
+  }
+}

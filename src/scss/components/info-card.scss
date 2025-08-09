@@ -1,4 +1,5 @@
 .info-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -9,12 +10,36 @@
     background-color: var(--color-gray-50);
   }
 
+  &--gray-100 {
+    background-color: var(--color-gray-100);
+  }
+
   &--white {
     background-color: var(--color-white);
   }
 
+  &--primary {
+    background-color: var(--color-primary);
+  }
+
+  &--black {
+    background-color: var(--color-black);
+  }
+
   &--p-0 {
     padding: 0;
+  }
+
+  &--pb-sm {
+    padding-bottom: 24px;
+  }
+
+  &--pb-xl {
+    padding-bottom: 36px;
+  }
+
+  &--pb-0 {
+    padding-bottom: 0;
   }
 
   &--row {
@@ -22,8 +47,19 @@
   }
 
   &__title {
+    position: relative;
+    z-index: 1;
+
+    &--w-2xs {
+      max-width: 340px;
+    }
+
     &--w-xs {
       max-width: 400px;
+    }
+
+    &--w-sm {
+      max-width: 544px;
     }
 
     &--mb-sm {
@@ -32,6 +68,9 @@
   }
 
   &__text {
+    position: relative;
+    z-index: 1;
+
     &:not(:first-child) {
       margin-top: 12px;
     }
@@ -65,6 +104,14 @@
         margin-top: 32px;
       }
     }
+
+    &--w-2xs {
+      max-width: 345px;
+    }
+
+    &--w-xs {
+      max-width: 380px;
+    }
   }
 
   &__location {
@@ -73,21 +120,45 @@
 
   &__main {
     padding: 32px;
+
+    &--pb-0 {
+      padding-bottom: 0;
+    }
   }
 
   &__img {
     align-self: flex-end;
+    display: block;
+
+    &--ml-auto {
+      margin-left: auto;
+    }
+
+    &--mt-xl {
+      margin-top: 20px;
+    }
+
+    &--mr-3xl {
+      margin-right: 75px;
+    }
   }
 
   &__footer {
     margin-top: auto;
+    width: 100%;
   }
 
   &__btn {
+    position: relative;
+    z-index: 1;
     margin-top: 20px;
 
     &--mt-lg {
       margin-top: 24px;
+    }
+
+    &--mt-xs {
+      margin-top: 12px;
     }
   }
 
@@ -111,9 +182,29 @@
     margin-left: 8px;
   }
 
+  &__bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    object-fit: contain;
+
+    &--car {
+      top: 0;
+      bottom: unset;
+    }
+  }
+
   @media (max-width: 1180px) {
     &__main {
       padding: 28px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__bg {
+      &--car {
+        max-width: 350px;
+      }
     }
   }
 
@@ -136,6 +227,27 @@
 
     &__img {
       max-width: 200px;
+
+      &--xl {
+        max-width: 240px;
+      }
+
+      &--mr-3xl {
+        margin-right: 32px;
+      }
+    }
+
+    &__bg {
+      &--2xl {
+        max-width: 320px;
+      }
+
+      &--car {
+        top: unset;
+        bottom: 0;
+        transform: translateY(0);
+        max-width: 210px;
+      }
     }
   }
 }

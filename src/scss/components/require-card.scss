@@ -4,12 +4,20 @@
   background-color: var(--color-gray-50);
   mask-image: radial-gradient(circle, black 100%, transparent 100.1%);
 
+  &--no-mask {
+    mask-image: none;
+  }
+
   &--primary {
     background-color: var(--color-primary);
   }
 
   &--p-0 {
     padding: 0;
+  }
+
+  &--pb-2xl {
+    padding-bottom: 56px;
   }
 
   &--h-lg {
@@ -139,6 +147,14 @@
     &--mt-lg {
       margin-top: 24px;
     }
+
+    &--p-my-xl {
+      p {
+        &:not(:first-child) {
+          margin-top: 24px;
+        }
+      }
+    }
   }
 
   &__list {
@@ -198,6 +214,10 @@
     &--my-lg {
       margin-top: 14px;
       margin-bottom: 14px;
+    }
+
+    &--ml-sm {
+      margin-left: 22px;
     }
 
     &--self-end {
