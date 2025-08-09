@@ -37,6 +37,10 @@
   @media (max-width: 767px) {
     &__item {
       width: calc(100% - 12px);
+
+      &--h-lg {
+        min-height: auto;
+      }
     }
   }
 }
