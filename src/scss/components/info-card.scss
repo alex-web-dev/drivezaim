@@ -244,7 +244,8 @@
 
       &--car {
         top: unset;
-        bottom: 0;
+        bottom: -25px;
+        right: -10px;
         transform: translateY(0);
         max-width: 210px;
       }
