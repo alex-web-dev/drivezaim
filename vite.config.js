@@ -24,6 +24,7 @@ export default {
         moneyInAction: 'money-in-action.html',
         cashGap: 'cash-gap.html',
         creditForContract: 'credit-for-contract.html',
+        carLoan: 'car-loan.html',
       },
     },
   },
