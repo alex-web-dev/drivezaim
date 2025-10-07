@@ -19,6 +19,10 @@
       min-height: 316px;
     }
 
+    &--h-xl {
+      min-height: 360px;
+    }
+
     &--col-8 {
       width: calc(100% / 12 * 8 - 12px);
     }
@@ -38,7 +42,8 @@
     &__item {
       width: calc(100% - 12px);
 
-      &--h-lg {
+      &--h-lg,
+      &--h-xl {
         min-height: auto;
       }
     }

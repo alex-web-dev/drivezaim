@@ -25,6 +25,7 @@ export default {
         cashGap: 'cash-gap.html',
         creditForContract: 'credit-for-contract.html',
         carLoan: 'car-loan.html',
+        carLoanLegalEntity: 'car-loan-legal-entity.html',
       },
     },
   },

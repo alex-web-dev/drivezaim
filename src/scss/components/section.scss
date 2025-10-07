@@ -32,6 +32,10 @@
     &--mb-xs {
       margin-bottom: 24px;
     }
+
+    &--mb-3xs {
+      margin-bottom: 12px;
+    }
   }
 
   &__header-btns {
@@ -142,6 +146,14 @@
 
     &--col-12 {
       width: calc(100% - 12px);
+    }
+
+    &--col-7 {
+      width: calc(100% / 12 * 7 - 12px);
+    }
+
+    &--col-5 {
+      width: calc(100% / 12 * 5 - 12px);
     }
 
     &--col-3 {

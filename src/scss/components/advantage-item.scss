@@ -5,6 +5,10 @@
     background-color: var(--color-black-light);
   }
 
+  &--black {
+    background-color: var(--color-black);
+  }
+
   &__num {
     margin-bottom: 24px;
     width: 60px;
@@ -21,6 +25,10 @@
   }
 
   &__text {
+    margin-top: 12px;
+  }
+
+  &__btn {
     margin-top: 12px;
   }
 

@@ -36,6 +36,10 @@
     overflow: hidden;
   }
 
+  &--column {
+    flex-direction: column;
+  }
+
   &__circle {
     position: absolute;
     left: 0;
@@ -93,6 +97,10 @@
     &--mb-xs {
       margin-bottom: 8px;
     }
+
+    &--mt-xl {
+      margin-top: 40px;
+    }
   }
 
   &__main {
@@ -115,6 +123,10 @@
     &--py-lg {
       padding-top: 32px;
       padding-bottom: 32px;
+    }
+
+    &--row {
+      flex-direction: row;
     }
   }
 
@@ -142,6 +154,10 @@
 
     &--max-w-xs {
       max-width: 58%;
+    }
+
+    &--w-2xs {
+      max-width: 250px;
     }
 
     &--mt-lg {
@@ -194,6 +210,10 @@
     &--max-w-xs {
       max-width: 42%;
     }
+
+    &--under-sm {
+      bottom: -10px;
+    }
   }
 
   &__img {
@@ -222,6 +242,14 @@
 
     &--self-end {
       align-self: flex-end;
+    }
+
+    &--self-start {
+      align-self: flex-start;
+    }
+
+    &--w-2xs {
+      max-width: 198px;
     }
   }
 
